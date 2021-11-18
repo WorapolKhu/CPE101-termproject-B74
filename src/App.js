@@ -1,13 +1,12 @@
-import "./App.css";
-/******
-sad :<
-******/
+import React from 'react';
+import Navbar from './navbar/navbar';
+import Content from './content/content';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">Hello world</header>
+      <Navbar />
+      <Content />
     </div>
   );
 }
-
 export default App;
