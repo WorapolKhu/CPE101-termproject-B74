@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './navbar/navbar';
 import Content from './content/content';
+import "./App.css";
 function App() {
   return (
     <div className="App">
