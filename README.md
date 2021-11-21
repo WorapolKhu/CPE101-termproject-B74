@@ -1,5 +1,11 @@
-<<<<<<< HEAD
-confusemakmak
-=======
-Evil CPE101
->>>>>>> f9b6713205a3195df4fd375027f220a534b16ff7
+## B74
+
+> use react and scss
+> and mysql in server maintance
+
+### install and setup
+
+-git clone 'url'
+-npm install
+-npm start
+-work!!
