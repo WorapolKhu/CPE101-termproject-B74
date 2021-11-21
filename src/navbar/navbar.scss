@@ -3,6 +3,17 @@
   font-family: sukhumvit;
   src: url(./../font/SukhumvitSet-Medium.ttf);
 }
+@keyframes itemEnter {
+  from {
+    transform: translateY(40%) scale(0.94);
+    opacity: .6;
+  }
+  
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
 
 .navbar{
   width: 100%;
@@ -36,25 +47,26 @@
 .navigation {
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
     li {
       list-style: none;
-      margin: -3.8rem 1.5vw 0.4rem 1.5vw;
+      margin: -3.9rem 1.5vw 0.4rem 1.5vw;
       a {
+        position: relative;
         font-family: 'Epilogue', sans-serif;
         text-decoration: none;
         color: #505050;
         font-size: 1rem;
         font-weight: 500;
         transition: all .7s ease-in;
-        padding: 0.3rem;
+        padding: 0.2rem;
         border-radius: 5px;
       }
       a:hover {
           color: #000000;
       }
       
-    }
+  }
 }
 
 .Subnavigation {
@@ -71,7 +83,7 @@
       font-size: 0.7rem;
       font-weight: 500;
       transition: all .7s ease-in;
-      padding: 0.3rem;
+      padding: 0.1rem;
       border-radius: 5px;
     }
     a:hover {

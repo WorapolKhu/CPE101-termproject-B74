@@ -27,8 +27,8 @@ const Navbar=() => {
         <nav className="navigation">
             <li><p>&thinsp;<a href="/">Home</a>&thinsp;</p></li>
             <li><p>&thinsp;<a href="/">Vehicle</a>&thinsp;</p></li>
-            <li><p>&thinsp;<a href="/">Driver</a>&thinsp;</p></li>
-            <li><p>&thinsp;<a href="/">Reservation</a>&thinsp;</p></li>
+            <li><p><a href="/">Driver</a>&thinsp;</p></li>
+            <li><p><a href="/">Reservation</a></p></li>
         </nav>
         <nav className="Subnavigation">
             <li><p>&thinsp;<a href="/">หน้าหลัก</a>&emsp;</p></li>
