@@ -109,7 +109,8 @@
     height: 1.8rem;
     padding: auto;
     a {
-      margin: 0rem auto;
+      margin:0 auto;
+      margin-left: .2rem;
       font-family: "Epilogue", sans-serif;
       text-decoration: none;
       color: #ffffff;
@@ -121,6 +122,9 @@
       &:hover {
         text-decoration: underline;
         font-weight: 500;
+      }
+      &:nth-child(1) {
+        margin-left: .6rem;
       }
     }
   }
