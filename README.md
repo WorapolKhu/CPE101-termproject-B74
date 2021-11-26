@@ -21,7 +21,7 @@
     # this command will foget everything in local
     # and made them exact the same as origin/master
 
-    git reset --hard origin/master
+        git reset --hard origin/master
 
 ```
 
@@ -39,4 +39,14 @@
 <Link to="/pageaddress"></Link>
 // page address can see or change in
 // Route.path element in App.js
+```
+## Technical Back-end
+
+> use real-time database [rethinkdb](https://rethinkdb.com/)
+> or any database in alternative
+> use nodejs and [expressjs(rest api)](https://expressjs.com/) to connect to database
+
+```sh
+npm install express --save
+npm i rethinkdb
 ```
