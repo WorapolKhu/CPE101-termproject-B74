@@ -1,0 +1,185 @@
+.Confirmation{
+    width: 45rem;
+    margin: 5rem auto;
+    padding: 1.5rem;
+    height: 420px;
+    border: 1px solid rgb(128, 128, 128);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.image {
+    width: 7rem;
+    position: absolute;
+    left: 55%;
+    height: 10rem;
+    border: 1px solid rgb(128, 128, 128);
+}
+
+.first {
+    font-family: "sukhumvit";
+    font-size: 12px;
+    columns: 2;
+    list-style: none;
+    width: 300px;
+}
+
+.first c{
+    font-family: "sukhumvit";
+    font-size: 11px;
+   border-radius: 10px;
+   background-color: rgb(192, 190, 190);
+   width: 100px;
+   height: 10px;
+}
+
+.second {
+    font-family: "sukhumvit";
+    font-size: 12px;
+    columns: 2;
+    list-style: none;
+    width: 300px;
+}
+
+.second c{
+    font-family: "sukhumvit";
+    font-size: 11px;
+   border-radius: 10px;
+   background-color: rgb(192, 190, 190);
+}
+
+.third {
+    font-family: "sukhumvit";
+    font-size: 12px;
+    columns: 2;
+    list-style: none;
+    width: 300px;
+}
+
+.third c{
+    font-family: "sukhumvit";
+    font-size: 11px;
+   border-radius: 10px;
+   background-color: rgb(192, 190, 190);
+}
+
+.fouth {
+    font-family: "sukhumvit";
+    font-size: 12px;
+    columns: 2;
+    list-style: none;
+    width: 300px;
+}
+
+.fouth c{
+    font-family: "sukhumvit";
+    font-size: 11px;
+   border-radius: 10px;
+   background-color: rgb(192, 190, 190);
+}
+
+.fifth {
+    font-family: "sukhumvit";
+    font-size: 12px;
+    columns: 2;
+    list-style: none;
+    width: 300px;
+}
+
+.fifth c{
+    font-family: "sukhumvit";
+    font-size: 11px;
+   border-radius: 10px;
+   background-color: rgb(192, 190, 190);
+}
+
+.contect{
+    color: gray;
+    font-size: 11px;
+    font-family: "sukhumvit";
+}
+
+.contect .drivercontect{
+    border: 1px solid gray;
+    list-style: none;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.Info{
+    font-family: "sukhumvit";
+    font-size: 12px;
+}
+
+.Info .Name{
+    columns: 2;
+    list-style: none;
+    width: 300px;
+}
+
+.Info .Name c{
+    font-size: 11px;
+   border-radius: 10px;
+   background-color: rgb(192, 190, 190);
+}
+
+.Info .Lastname{
+    columns: 2;
+    list-style: none;
+    width: 300px;
+}
+
+.Info .Lastname c{
+    font-size: 11px;
+   border-radius: 10px;
+   background-color: rgb(192, 190, 190);
+}
+
+.Info .Number{
+    columns: 2;
+    list-style: none;
+    width: 300px;
+}
+
+.Info .Number c{
+    font-size: 11px;
+   border-radius: 10px;
+   background-color: rgb(192, 190, 190);
+}
+
+.Info .Passenger{
+    columns: 2;
+    list-style: none;
+    width: 300px;
+}
+
+.Info .Passenger c{
+    font-size: 11px;
+   border-radius: 10px;
+   background-color: rgb(192, 190, 190);
+}
+
+.button {
+    columns: 2;
+    margin-top: 1.5rem;
+}
+
+.button .edit button{
+    font-family: "sukhumvit";
+    border-radius: 10px;
+    background-color: #4FD601;
+    border: #4FD601;
+    box-shadow: 1.5px 1.5px 1.5px #7CFA34 ;
+    color: white;
+    margin: 0.2rem;
+}
+
+.button .okay button{
+    font-family: "sukhumvit";
+    border-radius: 10px;
+    background-color:#FE4600;
+    border: #FE4600;
+    box-shadow: 1.5px 1.5px 1.5px #FF936A;
+    color: white;
+    margin: 0.2rem;
+}
