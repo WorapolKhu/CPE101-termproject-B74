@@ -1,8 +1,11 @@
-import React  from "react";
+import React, { useState }  from "react";
 import { Link } from "react-router-dom";
 import "./Res.css"
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const Reservation = () => {
+  const [startDate, setStartDate] = useState(new Date());
   return  <div className="Information">
               <h1>Detail</h1>
               <div className="Destination">
@@ -172,7 +175,7 @@ const Reservation = () => {
               </div>
               <div className="Date">
                 <li>วันที่</li>
-                <c>เลือกวันที่..</c>
+                <calendar><DatePicker selected={startDate} onChange={(date) => setStartDate(date)} /></calendar>
               </div>
               <div className="Car">
                 <li>รถโดยสาร</li>
