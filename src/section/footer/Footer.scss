@@ -1,0 +1,20 @@
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #183658;
+  color: white;
+  padding: 5rem;
+  .container {
+    display: flex;
+    li {
+      flex: 1;
+      .logo {
+        font-size: 3em;
+      }
+    }
+    .headline {
+      color: #ffb32a;
+    }
+  }
+}

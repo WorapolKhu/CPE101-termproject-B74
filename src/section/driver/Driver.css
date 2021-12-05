@@ -1,0 +1,47 @@
+.driver {
+  background: url(../../img/picture/driver-bg.png);
+  size: 100vh;
+}
+
+.driver .front-bg {
+  text-align: center;
+  background-size: cover;
+  padding: 2.5rem 5rem;
+  padding-bottom: 4rem;
+}
+
+.driver .front-bg .text {
+  font-size: 1.5rem;
+}
+
+.driver .front-bg .text h1 {
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.driver .front-bg .text h2 {
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.driver .front-bg .container {
+  margin: 0rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.driver .front-bg .container .person {
+  -webkit-box-flex: 1fr;
+      -ms-flex: 1fr;
+          flex: 1fr;
+}
+/*# sourceMappingURL=Driver.css.map */

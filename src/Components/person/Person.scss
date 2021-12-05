@@ -1,0 +1,35 @@
+.person {
+  // position: absolute;
+  padding: 3rem 0rem;
+  // margin: 2rem;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8em;
+  border-radius: 5px;
+  .face {
+    clip-path: circle(50% at 50% 50%);
+    width: 60%;
+    margin-bottom: 1.25em;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .score {
+    display: inline-flex;
+  }
+  .car-type {
+    display: inline-flex;
+    font-size: 0.75rem;
+  }
+
+  p {
+    text-align: center;
+    font-size: 0.75rem;
+
+    margin-left: 1rem;
+  }
+}
