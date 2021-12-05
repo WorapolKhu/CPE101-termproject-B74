@@ -1,0 +1,127 @@
+.Information{
+    width: 80%;
+    margin: 5rem auto;
+    padding: 1.5rem;
+    height: 420px;
+    border: 1px solid rgb(128, 128, 128);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.Information h1{
+    font-size: 30px;
+    font-family: "Epilogue";
+}
+
+.Destination {
+    column-count: 2;
+    align-items: center;
+    
+}
+
+.Destination option{
+    font-family: "sukhumvit";
+    color: black;
+
+}
+
+.Destination select{
+    font-family: "sukhumvit";
+    border: none;
+    border-bottom: solid black 1px;
+    color: gray;
+    font-size: 11px;
+    width: 200px;
+}
+
+.DateandCar{
+    column-count: 2;
+    align-items: center;
+    list-style: none;
+}
+
+.Car option{
+    font-family: "sukhumvit";
+    color: black;
+}
+
+.Car select{
+    font-family: "sukhumvit";
+    border: none;
+    border-bottom: solid black 1px;
+    color: gray;
+    font-size: 11px;
+    width: 200px;
+}
+
+.Driver select{
+    font-family: "sukhumvit";
+    border: none;
+    border-bottom: solid black 1px;
+    color: gray;
+    font-size: 11px;
+    width: 200px;
+}
+.Driver option{
+    font-family: "sukhumvit";
+    color: black;
+}
+
+.Date li {
+        list-style: none;
+        font-family: "sukhumvit";
+        margin-top: 20px;
+        font-size: 12px;
+}
+
+.Car li {
+    list-style: none;
+    font-family: "sukhumvit";
+    margin-top: 20px;
+    font-size: 12px;
+}
+.Driver li {
+    list-style: none;
+    font-family: "sukhumvit";
+    margin-top: 20px;
+    font-size: 12px;
+}
+.Destination li {
+    list-style: none;
+    font-family: "sukhumvit";
+    font-size: 12px;
+}
+
+
+c{
+    color: gray;
+    border-bottom: 1px solid black;
+    width: 20%;
+    font-family: "sukhumvit";
+}
+
+.Destination ul{
+    list-style: none;
+    background-color: wheat;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: violet;
+}
+
+.Next button{
+    position: relative;
+    text-decoration: none;
+    top: 50px;
+    border-radius: 10px;
+    background-color:#FE4600;
+    border: #FE4600;
+    box-shadow: 1.5px 1.5px 1.5px #FF936A;
+    color: white;
+    font-family: "sukhumvit";
+    width: 5rem;
+}
+
+.Next Link{
+    text-decoration: none;
+}
