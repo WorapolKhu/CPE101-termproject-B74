@@ -1,0 +1,27 @@
+.vehicle {
+  padding-top: 3rem;
+
+  background: url(../../img/picture/vehicle-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  .text {
+    font-size: 1.5rem;
+    h1 {
+      padding-top: 0.5rem;
+      text-align: center;
+    }
+    h2 {
+      font-size: 0.8em;
+      text-align: center;
+      margin-bottom: 2em;
+    }
+  }
+  .container {
+    margin: 0rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 4rem;
+    // grid-template-rows: 1fr 1fr;
+  }
+}

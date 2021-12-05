@@ -1,0 +1,199 @@
+.res3 .Confirmation {
+  width: 45rem;
+  margin: 5rem auto;
+  padding: 1.5rem;
+  height: 420px;
+  border: 1px solid gray;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.res3 .image {
+  width: 7rem;
+  position: absolute;
+  left: 55%;
+  height: 10rem;
+  border: 1px solid gray;
+}
+
+.res3 .first {
+  font-family: "sukhumvit";
+  font-size: 12px;
+  -webkit-columns: 2;
+          columns: 2;
+  list-style: none;
+  width: 300px;
+}
+
+.res3 .first c {
+  font-family: "sukhumvit";
+  font-size: 11px;
+  border-radius: 10px;
+  background-color: #c0bebe;
+  width: 100px;
+  height: 10px;
+}
+
+.res3 .second {
+  font-family: "sukhumvit";
+  font-size: 12px;
+  -webkit-columns: 2;
+          columns: 2;
+  list-style: none;
+  width: 300px;
+}
+
+.res3 .second c {
+  font-family: "sukhumvit";
+  font-size: 11px;
+  border-radius: 10px;
+  background-color: #c0bebe;
+}
+
+.res3 .third {
+  font-family: "sukhumvit";
+  font-size: 12px;
+  -webkit-columns: 2;
+          columns: 2;
+  list-style: none;
+  width: 300px;
+}
+
+.res3 .third c {
+  font-family: "sukhumvit";
+  font-size: 11px;
+  border-radius: 10px;
+  background-color: #c0bebe;
+}
+
+.res3 .fouth {
+  font-family: "sukhumvit";
+  font-size: 12px;
+  -webkit-columns: 2;
+          columns: 2;
+  list-style: none;
+  width: 300px;
+}
+
+.res3 .fouth c {
+  font-family: "sukhumvit";
+  font-size: 11px;
+  border-radius: 10px;
+  background-color: #c0bebe;
+}
+
+.res3 .fifth {
+  font-family: "sukhumvit";
+  font-size: 12px;
+  -webkit-columns: 2;
+          columns: 2;
+  list-style: none;
+  width: 300px;
+}
+
+.res3 .fifth c {
+  font-family: "sukhumvit";
+  font-size: 11px;
+  border-radius: 10px;
+  background-color: #c0bebe;
+}
+
+.res3 .contect {
+  color: gray;
+  font-size: 11px;
+  font-family: "sukhumvit";
+}
+
+.res3 .contect .drivercontect {
+  border: 1px solid gray;
+  list-style: none;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.res3 .Info {
+  font-family: "sukhumvit";
+  font-size: 12px;
+}
+
+.res3 .Info .Name {
+  -webkit-columns: 2;
+          columns: 2;
+  list-style: none;
+  width: 300px;
+}
+
+.res3 .Info .Name c {
+  font-size: 11px;
+  border-radius: 10px;
+  background-color: #c0bebe;
+}
+
+.res3 .Info .Lastname {
+  -webkit-columns: 2;
+          columns: 2;
+  list-style: none;
+  width: 300px;
+}
+
+.res3 .Info .Lastname c {
+  font-size: 11px;
+  border-radius: 10px;
+  background-color: #c0bebe;
+}
+
+.res3 .Info .Number {
+  -webkit-columns: 2;
+          columns: 2;
+  list-style: none;
+  width: 300px;
+}
+
+.res3 .Info .Number c {
+  font-size: 11px;
+  border-radius: 10px;
+  background-color: #c0bebe;
+}
+
+.res3 .Info .Passenger {
+  -webkit-columns: 2;
+          columns: 2;
+  list-style: none;
+  width: 300px;
+}
+
+.res3 .Info .Passenger c {
+  font-size: 11px;
+  border-radius: 10px;
+  background-color: #c0bebe;
+}
+
+.res3 .button {
+  -webkit-columns: 2;
+          columns: 2;
+  margin-top: 1.5rem;
+}
+
+.res3 .button .edit button {
+  font-family: "sukhumvit";
+  border-radius: 10px;
+  background-color: #4fd601;
+  border: #4fd601;
+  -webkit-box-shadow: 1.5px 1.5px 1.5px #7cfa34;
+          box-shadow: 1.5px 1.5px 1.5px #7cfa34;
+  color: white;
+  margin: 0.2rem;
+}
+
+.res3 .button .okay button {
+  font-family: "sukhumvit";
+  border-radius: 10px;
+  background-color: #fe4600;
+  border: #fe4600;
+  -webkit-box-shadow: 1.5px 1.5px 1.5px #ff936a;
+          box-shadow: 1.5px 1.5px 1.5px #ff936a;
+  color: white;
+  margin: 0.2rem;
+}
+/*# sourceMappingURL=Res3.css.map */

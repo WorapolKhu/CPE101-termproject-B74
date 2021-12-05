@@ -1,0 +1,30 @@
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #183658;
+  color: white;
+  padding: 5rem;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .container li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.footer .container li .logo {
+  font-size: 3em;
+}
+
+.footer .container .headline {
+  color: #ffb32a;
+}
+/*# sourceMappingURL=Footer.css.map */

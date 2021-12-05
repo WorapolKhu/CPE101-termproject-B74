@@ -1,5 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: sukhumvit;
+  src: url(./font/SukhumvitSet-Medium.ttf);
+}
+
 * {
+  font-family: "sukhumvit", sans-serif;
   box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  width: 100%;
 }
 body {
   margin: 0;

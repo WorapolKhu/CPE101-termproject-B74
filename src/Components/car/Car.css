@@ -1,0 +1,34 @@
+.car {
+  padding: 2rem;
+  background-color: rgba(252, 252, 252, 0.8);
+  border-radius: 1em;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.car .car-name {
+  color: #214478;
+}
+
+.car .car-img {
+  width: 80%;
+  margin: auto;
+}
+
+.car .car-prop {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 0.5rem;
+}
+
+.car .car-prop .icon {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: 0.5rem;
+}
+
+.car .car-prop p {
+  font-size: 0.85em;
+}
+/*# sourceMappingURL=Car.css.map */

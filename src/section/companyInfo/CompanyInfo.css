@@ -1,0 +1,47 @@
+.company-info {
+  background-color: #183658;
+  padding: 5rem;
+  padding-bottom: 3rem;
+}
+
+.company-info ul {
+  list-style-type: none;
+}
+
+.company-info .info li {
+  margin: 1.5rem 5rem;
+  font-size: 0.95em;
+}
+
+.company-info .info li h3 {
+  margin: 0.5rem 0rem;
+  color: #ffb32a;
+}
+
+.company-info .info li p {
+  font-size: 0.95em;
+  color: white;
+}
+
+.company-info .contact {
+  margin: 1.5rem 5rem;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.company-info .contact li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.company-info .contact li p {
+  color: white;
+  margin: auto 1.5rem;
+}
+/*# sourceMappingURL=CompanyInfo.css.map */

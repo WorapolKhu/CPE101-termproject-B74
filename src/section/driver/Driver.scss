@@ -1,0 +1,37 @@
+.driver {
+  // position: relative;
+  // background: url(../../img/picture/driver-big-bg.png);
+  // background-size: cover;
+  background: url(../../img/picture/driver-bg.png);
+  size: 100vh;
+  .front-bg {
+    // position: absolute;
+    // justify-self: center;
+    text-align: center;
+    background-size: cover;
+    padding: 2.5rem 5rem;
+    padding-bottom: 4rem;
+    .text {
+      font-size: 1.5rem;
+      h1 {
+        padding-top: 0.5rem;
+        text-align: center;
+      }
+      h2 {
+        font-size: 0.8em;
+        text-align: center;
+        margin-bottom: 2em;
+      }
+    }
+    .container {
+      margin: 0rem 5rem;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      column-gap: 2rem;
+      .person {
+        flex: 1fr;
+      }
+    }
+  }
+}

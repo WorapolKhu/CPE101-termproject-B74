@@ -1,0 +1,27 @@
+.hero {
+  background-image: url(../../img/picture/hero-bg-edited.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  position: relative;
+}
+
+.hero .container h1 {
+  margin-top: 3rem;
+  font-size: 3rem;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+.hero .container h5 {
+  font-size: 1.5rem;
+  color: #4d4d4d;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.hero .container .price-checker {
+  margin-top: 5rem;
+}
+/*# sourceMappingURL=Hero.css.map */

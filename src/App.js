@@ -1,23 +1,20 @@
 import { Route, Routes } from "react-router";
 import React from "react";
 
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Reservation from "./pages/Reservation";
-import MainNavigation from "./Components/navbar/MainNavigation";
-import SignUp from "./pages/SignUp";
-import Navbar from "./Components/navbar/navbar";
-
+import Home from "./pages/home/Home";
+import Res1 from "./pages/reservation/reservation_1/Res1";
+import Res2 from "./pages/reservation/reservation_2/Res2";
+import Res3 from "./pages/reservation/reservation_3/Res3";
+import Navbar from "./Components/navbar/navbar/navbar";
 function App() {
   return (
     <div>
-      {/* <MainNavigation /> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/reservation" element={<Reservation />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/reservation" element={<Res1 />} />
+        <Route path="/reservation-info" element={<Res2 />} />
+        <Route path="/reservation-confirm" element={<Res3 />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,33 @@
+.vehicle {
+  padding-top: 3rem;
+  background: url(../../img/picture/vehicle-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.vehicle .text {
+  font-size: 1.5rem;
+}
+
+.vehicle .text h1 {
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.vehicle .text h2 {
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.vehicle .container {
+  margin: 0rem 10rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 2rem;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
+}
+/*# sourceMappingURL=Vehicle.css.map */

@@ -1,0 +1,25 @@
+.car {
+  padding: 2rem;
+  background-color: rgba($color: #fcfcfc, $alpha: 0.8);
+  border-radius: 1em;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  .car-name {
+    color: #214478;
+  }
+  .car-img {
+    width: 80%;
+    margin: auto;
+  }
+  .car-prop {
+    display: inline-flex;
+    margin-top: 0.5rem;
+    .icon {
+      align-self: flex-start;
+      margin-right: 0.5rem;
+    }
+    p {
+      font-size: 0.85em;
+    }
+  }
+}
