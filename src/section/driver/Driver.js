@@ -1,6 +1,6 @@
 import React from "react";
 import Person from "../../Components/person/Person";
-import "./Driver.css";
+import "./Driver.scss";
 
 const Dummy_Data = [
   {
@@ -37,14 +37,6 @@ const Dummy_Data = [
   },
   {
     id: "4",
-    name: "ศรัณย์ญรัชต์  วงศ์สาสนธิ์ 5",
-    img: "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png",
-    car: "รถแท็กซี่",
-    score: "4.2",
-    reviewCount: "125",
-  },
-  {
-    id: "5",
     name: "ศรัณย์ญรัชต์  วงศ์สาสนธิ์ 5",
     img: "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png",
     car: "รถแท็กซี่",

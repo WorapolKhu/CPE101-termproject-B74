@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import PriceChecker from "../../Components/priceChecker/PriceChecker";
+//import Navbar from "../../Components/navbar/navbar/navbar";
 
 const Hero = () => {
   return (

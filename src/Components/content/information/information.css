@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: sukhumvit;
+  src: url(./../../font/SukhumvitSet-Medium.ttf);
+}
+
+main, html {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #FFFCFA;
+}
+
+.Headtext-warpper {
+  font-family: epilogue,sans-serif;
+  font-size: 2rem;
+  position: absolute;
+  top: .7vh;
+  left: 23vw;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  font-weight: 700;
+  color: #565656;
+}
+
+.box-content {
+  width: 4%;
+  height: 1%;
+  position: absolute;
+  margin-top: 4.4rem;
+  margin-right: 21vw;
+  background-color: #E4E4E4;
+  border-radius: 5px;
+}
+
+.box {
+  width: 70%;
+  height: 70%;
+  margin-top: 8vh;
+  margin-left: 12vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+  border: 1px solid #707070;
+  position: absolute;
+}
+
+form {
+  margin-top: 4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: auto;
+  z-index: 1;
+}
+
+form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 2.1vh 0 0 1.9vh;
+}
+
+form label p {
+  font-family: sukhumvit;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #505050;
+  margin: -0.4rem 0rem 0rem 2.7vh;
+  position: absolute;
+  z-index: 2;
+}
+
+form label .subtext {
+  font-family: sukhumvit;
+  font-size: 1.2rem;
+  color: #505050;
+  margin: 1.8rem 0rem 0rem 7.4vh;
+  position: absolute;
+  z-index: 2;
+  font-weight: 300;
+}
+
+form label input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .5rem .8rem .5rem .8rem;
+  margin: 1.9vh 0 0 1.9vh;
+  border: 0px;
+  color: #1b1b1b;
+  border-bottom: 1.25px solid #3b3b3b;
+  font-size: 0.8rem;
+  z-index: 1;
+}
+
+form label input:hover {
+  background-color: #fafdff;
+}
+
+form label input:focus {
+  background-color: #f3f3f3;
+  border: 1.5px solid #186edf;
+  border-radius: 5px;
+}
+
+form label textarea {
+  font-family: sukhumvit;
+  margin: 1.9vh 0 0 1.9vh;
+  height: 15vh;
+  width: 15vw;
+  padding: .7rem 1rem .7rem 1rem;
+  resize: none;
+  border-radius: 14px;
+}
+
+form .text {
+  margin: 3.9vh;
+}
+
+form button {
+  background-color: #008cff;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 26px;
+  -webkit-box-shadow: 0.1px 5px 15px 0px #4dafff;
+          box-shadow: 0.1px 5px 15px 0px #4dafff;
+  color: #FFFFFF;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  margin: 0 auto;
+}
+
+form button:hover {
+  background-color: #2e3592;
+}
+
+form button:active {
+  background-color: #172d69;
+}
+
+form .numberpass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .5rem .4rem .5rem .4rem;
+  width: 1vw;
+  margin: 1.9vh 0 0 3.4vh;
+  border: 0px;
+  color: #1b1b1b;
+  border: 1.25px solid #6e6e6e;
+  font-size: 0.8rem;
+  border-radius: 7px;
+  z-index: 1;
+  -webkit-transform: all 0.2s ease-in-out;
+          transform: all 0.2s ease-in-out;
+}
+
+form .numberpass:hover {
+  background-color: #fafdff;
+}
+
+form .numberpass:active {
+  background-color: #cccccc;
+  border-bottom: 1.25px solid #186edf;
+  outline: none;
+}
+/*# sourceMappingURL=information.css.map */
