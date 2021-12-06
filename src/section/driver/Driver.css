@@ -25,24 +25,4 @@
   text-align: center;
   margin-bottom: 2.5em;
 }
-
-.driver .front-bg .container {
-  margin: 0rem 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-column-gap: 2rem;
-          column-gap: 2rem;
-}
-
-.driver .front-bg .container .person {
-  -webkit-box-flex: 1fr;
-      -ms-flex: 1fr;
-          flex: 1fr;
-}
 /*# sourceMappingURL=Driver.css.map */
