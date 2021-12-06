@@ -43,6 +43,24 @@ const Navbar = () => {
         toggleLogin();
     }
 
+    const [login, setLogin] = useState({
+        email: "",
+        password: ""
+    });
+
+    const handleChange = (event) => {
+        //put input in array state
+        const name = event.target.name;
+        const value = event.target.value;
+        setLogin((values) => ({ ...values, [name]: value }));
+    };
+
+    const handleSubmit = (event) => {
+        //submit array state to database
+        event.preventDefault();
+        console.log("submit value", login); //line connect database
+    };
+
     return (
         <>
             <div className={navbarClasses.join(" ")}>
@@ -157,17 +175,33 @@ const Navbar = () => {
                                     </div>
                                     <div className="inputBox">
                                         <img className="emailIcon" src="/greyEmail.svg" alt="email-icon" />
-                                        <input type="email" placeholder="type your email" className="borderless" />
+                                        <input
+                                            type="email"
+                                            placeholder="type your email"
+                                            className="borderless"
+                                            value={login.email}
+                                            onChange={handleChange}
+                                            name="email"
+                                            required
+                                        />
                                     </div>
                                 </div>
                                 <div className="line"></div>
                                 <div className="passwordInput">
                                     <div className="topic">
                                         <p>Password</p>
-                                        <div className="inputBox">
-                                            <img className="passwordIcon" src="/greyPassword.svg" alt="password-icon" />
-                                            <input type="password" placeholder="type your password" className="borderless" />
-                                        </div>
+                                    </div>
+                                    <div className="inputBox">
+                                        <img className="passwordIcon" src="/greyPassword.svg" alt="password-icon" />
+                                        <input
+                                            type="password"
+                                            placeholder="type your password"
+                                            className="borderless"
+                                            value={login.password}
+                                            onChange={handleChange}
+                                            name="password"
+                                            required
+                                        />
                                     </div>
                                     <div className="line"></div>
                                 </div>
