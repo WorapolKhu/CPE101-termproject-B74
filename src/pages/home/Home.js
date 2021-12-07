@@ -4,6 +4,8 @@ import CompanyInfo from "../../section/companyInfo/CompanyInfo";
 import Vehicle from "../../section/vehicle/Vehicle";
 import Driver from "../../section/driver/Driver";
 import Footer from "../../section/footer/Footer";
+import Navbar from "../../Components/navbar/navbar/navbar";
+//import Slider from "../../section/slider/Slider";
 const Home = () => {
   return (
     <div>
@@ -12,6 +14,7 @@ const Home = () => {
       <Driver />
       <Vehicle />
       <Footer />
+      
     </div>
   );
 };

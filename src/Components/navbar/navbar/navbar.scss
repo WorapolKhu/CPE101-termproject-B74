@@ -14,15 +14,14 @@
     opacity: 1;
   }
 }
-// :target {
-//   display: block;
-//   position: relative;
-//   top: -120px;
-//   visibility: hidden;
-// }
+
+body.active-SignupPopup, body.active-LoginPopup {
+  overflow-y: hidden;
+}
+
 .navbar {
   z-index: 3;
-  padding-top: 2rem;
+  padding-top: 1rem;
   width: 100%;
   min-height: 7vh;
   top: 0;
@@ -30,7 +29,7 @@
   box-sizing: border-box;
   align-items: center;
   background-color: rgba(255, 255, 255, 0);
-  transition: all 0.7s ease-in;
+  transition: all 0.1s ease-in;
 }
 .scrolled {
   position: fixed;
@@ -115,9 +114,9 @@
     width: 8.5rem;
     height: 1.8rem;
     padding: auto;
-    a {
-      margin: 0 auto;
-      margin-left: 0.2rem;
+    .Signup, .Login {
+      margin:0 auto;
+      margin-left: .2rem;
       font-family: "Epilogue", sans-serif;
       text-decoration: none;
       color: #ffffff;
@@ -129,10 +128,142 @@
       &:hover {
         text-decoration: underline;
         font-weight: 500;
+        cursor: pointer;
       }
       &:nth-child(1) {
         margin-left: 0.6rem;
       }
     }
   }
+}
+//////////////////////////////////////
+
+.signup {
+  height: 100vh;
+  
+  .box2 {
+      z-index: 4;
+      background-color: #EFFBFF;
+      width: 555px;
+      height: 530px;
+      border-radius: 40px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); 
+      box-shadow: 0px 0px 15px #C1C1C1;
+  }
+
+  .close {
+      text-decoration: none;
+      color: #707070;
+      font-size: 1.3rem;
+      font-weight: 400;
+      position: fixed;
+      right: 3rem;
+      top: 2rem
+  }
+
+  .bseven {
+      margin-top: 2.7rem;
+      font-weight: 800;
+      font-size: 2.7rem;
+      color: #135667;
+  }
+
+  .afterBseven {
+      margin-top: 1.5rem;
+      margin-left: 5rem;
+  }
+
+  .topic {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #135667;
+  }
+
+  input::-webkit-input-placeholder {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #135667;
+  height: fit-content;
+  }
+
+  .inputBox {
+      display: flex;
+  }
+
+  input {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: black;
+  }
+
+  .borderless2 {
+      background-color: #EFFBFF;
+      width: 320px;
+      padding-top: 2px;
+      padding-left: 15px;
+      border: none;
+  }
+
+  input:focus {
+      outline: none;
+  }
+
+  .line {
+      margin-bottom: 1rem;
+      padding: 2px;
+      width: 380px;
+      border-bottom: 1px solid #a3a2a2;
+  }
+  
+  .Icon {
+      padding-left: 15px;
+  }
+  
+  .signupButton {
+      padding: 8px 13px;
+      background-color: #135667;
+      box-shadow: 0px 2px 5px #707070;
+      border: none;
+      color: white;
+      width: 95px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 100px;
+      font-size: 15px;
+      transition-duration: 0.3s;
+  }
+
+  .close:hover {
+      color: #002b36;
+      cursor: pointer;
+  }
+  
+  .signupButton:hover {
+      background-color: #707070;
+      color: white;
+      cursor: pointer;
+  }
+
+  .button {
+      width: 555px;
+      display: flex;
+      justify-content: center;
+      margin-top: 45px;
+  }
+}
+
+.blurBackground2 {
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  backdrop-filter: blur(8px);
 }
