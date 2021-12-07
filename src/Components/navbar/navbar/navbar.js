@@ -71,13 +71,13 @@ const Navbar = () => {
                     <li><p>&thinsp;<Link to="/">Home</Link>&thinsp;</p></li>
                     <li><p><Link to="/">Vehicle</Link>&thinsp;&thinsp;</p></li>
                     <li><p><Link to="/">Driver</Link>&thinsp;</p></li>
-                    <li><p><Link to="/reservation">Reservation</Link></p></li>
+                    <li><p><Link to="/myticket">Reservation</Link></p></li>
                 </nav>
                 <nav className="Subnavigation">
                     <li><p><Link to="/">หน้าหลัก</Link>&emsp;&thinsp;</p></li>
                     <li><p><Link to="/">พาหนะ</Link>&emsp;&emsp;&thinsp;</p></li>
                     <li><p><Link to="/">คนขับ</Link>&emsp;&thinsp;&thinsp;&thinsp;</p></li>
-                    <li><p><Link to="/reservation">ประวัติการจอง</Link>&emsp;&emsp;</p></li>
+                    <li><p><Link to="/myticket">ประวัติการจอง</Link>&emsp;&emsp;</p></li>
                 </nav>
                 <div className="register">
                     <li>

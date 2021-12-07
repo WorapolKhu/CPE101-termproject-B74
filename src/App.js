@@ -8,6 +8,8 @@ import Res3 from "./pages/reservation/reservation_3/Res3";
 import Navbar from "./Components/navbar/navbar/navbar";
 import Login from "./Components/modals/login/Login"
 import Signup from "./Components/modals/signup/Signup";
+import History from "./pages/History/historypage";
+import Ticket from "./pages/History/pagereserve";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/reservation-confirm" element={<Res3 />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/myticket" element={<Ticket />} />
       </Routes>
     </div>
   );
