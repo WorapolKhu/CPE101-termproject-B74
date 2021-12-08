@@ -55,11 +55,11 @@ const Navbar = () => {
         setLogin((values) => ({ ...values, [name]: value }));
     };
 
-    const handleSubmit = (event) => {
-        //submit array state to database
-        event.preventDefault();
-        console.log("submit value", login); //line connect database
-    };
+    // const handleSubmit = (event) => {
+    //     //submit array state to database
+    //     event.preventDefault();
+    //     console.log("submit value", login); //line connect database
+    // };
 
     return (
         <>
