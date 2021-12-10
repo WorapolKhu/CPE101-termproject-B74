@@ -8,7 +8,7 @@ const Navbar = () => {
     const UserId = localStorage.getItem("UserId");
     if (UserId === null) {
         localStorage.setItem("UserId", uuid());
-        const UserId = localStorage.getItem("UserId");
+        UserId = localStorage.getItem("UserId");
     }
     const [scrolled, setScrolled] = React.useState(false);
     const handleScroll = () => {
@@ -68,7 +68,6 @@ const Navbar = () => {
         const value = event.target.value;
         setLogin((values) => ({ ...values, [name]: value }));
     };
-
     const handleSubmit = (event) => {
         event.preventDefault();
         //database sent
