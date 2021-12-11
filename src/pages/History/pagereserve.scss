@@ -1,0 +1,457 @@
+.mediaViewInfo {
+  --web-view-name: reversation – 1;
+  --web-view-id: reversation__1;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+:root {
+  --web-view-ids: reversation__1;
+}
+
+#reversation__1 {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+  }
+}
+#border {
+  left: 19.84%;
+  top: 16.65%;
+  position: absolute;
+  overflow: visible;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#bgr {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 80%;
+  overflow: visible;
+  z-index: -1;
+}
+#Rectangle_52 {
+  fill: rgba(64, 116, 164, 1);
+}
+.Rectangle_52 {
+  position: absolute;
+  overflow: visible;
+  width: 439px;
+  height: 223px;
+  left: 336px;
+  top: 0px;
+  z-index: 0;
+}
+#Rectangle_51 {
+  fill: rgba(255, 255, 255, 1);
+}
+.Rectangle_51 {
+  position: absolute;
+  overflow: visible;
+  width: 439px;
+  height: 223px;
+  left: 0px;
+  top: 0px;
+}
+
+#Rectangle_23 {
+  fill: rgba(255, 255, 255, 1);
+}
+.Rectangle_23 {
+  filter: drop-shadow(0px 7px 6px rgba(0, 0, 0, 0.161));
+  position: absolute;
+  overflow: visible;
+  width: 1176px;
+  height: 755px;
+  left: 0px;
+  top: 84px;
+}
+#Group_7 {
+  position: absolute;
+  width: 191px;
+  height: 22px;
+  left: 336px;
+  top: 152px;
+  overflow: visible;
+}
+#Line_3 {
+  fill: transparent;
+  stroke: rgba(153, 187, 232, 1);
+  stroke-width: 4px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_3 {
+  overflow: visible;
+  position: absolute;
+  width: 191px;
+  height: 4px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Line_4 {
+  fill: transparent;
+  stroke: rgba(153, 187, 232, 1);
+  stroke-width: 20px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_4 {
+  overflow: visible;
+  position: absolute;
+  width: 191px;
+  height: 20px;
+  left: 0px;
+  top: 22px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Group_8 {
+  position: absolute;
+  width: 191px;
+  height: 22px;
+  left: 669px;
+  top: 152px;
+  overflow: visible;
+}
+#Line_3_y {
+  fill: transparent;
+  stroke: rgba(153, 187, 232, 1);
+  stroke-width: 4px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_3_y {
+  overflow: visible;
+  position: absolute;
+  width: 191px;
+  height: 4px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#headtext {
+  left: 119px;
+  top: 300px;
+  position: absolute;
+  overflow: visible;
+  width: 539px;
+  height: 383px;
+  line-height: 50px;
+  margin-top: -10px;
+  text-align: left;
+  font-family: Sukhumvit Set;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(70, 78, 120, 1);
+}
+#information {
+  left: 400px;
+  top: 300px;
+  position: absolute;
+  overflow: visible;
+  width: 535px;
+  height: 383px;
+  line-height: 50px;
+  margin-top: -10px;
+  text-align: left;
+  font-family: Sukhumvit Set;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(70, 78, 120, 1);
+}
+
+#Ellipse_10 {
+  fill: rgba(33, 76, 131, 1);
+}
+.Ellipse_10 {
+  position: absolute;
+  overflow: visible;
+  width: 280px;
+  height: 280px;
+  left: 796px;
+  top: 307px;
+}
+#Group_39 {
+  position: absolute;
+  width: 187px;
+  height: 48px;
+  left: 843px;
+  top: 662px;
+  overflow: visible;
+}
+#Rectangle_25_bb {
+  fill: url(#Rectangle_25_bb);
+}
+.Rectangle_25_bb {
+  position: absolute;
+  overflow: visible;
+  width: 187px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+}
+#Text {
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+  left: 32px;
+  top: 13px;
+  position: absolute;
+  overflow: visible;
+  width: 121px;
+  height: 22px;
+  text-align: left;
+  font-family: Sukhumvit Set;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+#Group_43 {
+  position: absolute;
+  width: 128px;
+  height: 136px;
+  left: 870px;
+  top: 106px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: reversation___3.html;
+  cursor: pointer;
+}
+#Ellipse_8 {
+  fill: rgba(172, 213, 236, 1);
+}
+.Ellipse_8 {
+  position: absolute;
+  overflow: visible;
+  width: 72px;
+  height: 74px;
+  left: 28px;
+  top: 0px;
+}
+#n3 {
+  left: 36px;
+  top: 11px;
+  position: absolute;
+  overflow: visible;
+  width: 50px;
+  height: 47px;
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  color: rgba(70, 78, 120, 1);
+  margin-left: 1.2rem;
+}
+#n3t {
+  left: 0px;
+  top: 110px;
+  position: absolute;
+  overflow: visible;
+  width: 129px;
+  white-space: nowrap;
+  text-align: right;
+  font-family: Sukhumvit Set;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: rgba(153, 187, 232, 1);
+}
+
+#RESERVATION {
+  left: 47px;
+  top: 29.5px;
+  position: absolute;
+  overflow: visible;
+  width: 281px;
+  height: 41px;
+  text-align: right;
+  font-family: Epilogue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  color: rgba(47, 116, 158, 1);
+  letter-spacing: 0.5px;
+}
+#Line_12 {
+  fill: transparent;
+  stroke: rgba(33, 76, 131, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_12 {
+  overflow: visible;
+  position: absolute;
+  width: 316px;
+  height: 1px;
+  left: 446.5px;
+  top: 270px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#HISTORY {
+  left: 460px;
+  top: 29.5px;
+  position: absolute;
+  overflow: visible;
+  width: 197px;
+  height: 41px;
+  cursor: pointer;
+  text-align: right;
+  font-family: Epilogue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.5px;
+}
+#Group_42 {
+  position: absolute;
+  width: 121px;
+  height: 136px;
+  left: 538px;
+  top: 106px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: reversation___2.html;
+  cursor: pointer;
+}
+#n2t {
+  left: 0px;
+  top: 110px;
+  position: absolute;
+  overflow: visible;
+  width: 122px;
+  white-space: nowrap;
+  text-align: right;
+  font-family: Sukhumvit Set;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: rgba(153, 187, 232, 1);
+}
+#Ellipse_11 {
+  fill: rgba(172, 213, 236, 1);
+}
+.Ellipse_11 {
+  position: absolute;
+  overflow: visible;
+  width: 72px;
+  height: 74px;
+  left: 26px;
+  top: 0px;
+}
+#n2 {
+  left: 34px;
+  top: 11px;
+  position: absolute;
+  overflow: visible;
+  width: 50px;
+  height: 47px;
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  color: rgba(70, 78, 120, 1);
+  margin-left: 1.2rem;
+}
+#Group_41 {
+  position: absolute;
+  width: 111px;
+  height: 136px;
+  left: 193px;
+  top: 106px;
+  overflow: visible;
+}
+#Group_10 {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  left: 21px;
+  top: 0px;
+  overflow: visible;
+}
+#Ellipse_7 {
+  fill: rgba(70, 78, 120, 1);
+}
+.Ellipse_7 {
+  position: absolute;
+  overflow: visible;
+  width: 300px;
+  height: 300px;
+  left: 0px;
+  top: 0px;
+}
+#n1t {
+  left: 0px;
+  top: 110px;
+  position: absolute;
+  overflow: visible;
+  width: 112px;
+  white-space: nowrap;
+  text-align: right;
+  font-family: Sukhumvit Set;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: rgba(70, 78, 120, 1);
+}
+#n1 {
+  left: 28px;
+  top: 11px;
+  position: absolute;
+  overflow: visible;
+  width: 50px;
+  height: 47px;
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 1.2rem;
+}
+.col11 {
+  list-style-type: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 1.4em;
+}
+.col22 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 2em;
+}

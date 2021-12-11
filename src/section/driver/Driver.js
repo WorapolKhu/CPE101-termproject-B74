@@ -1,5 +1,6 @@
 // import React, { Component } from "react";
 //import Person from "../../Components/person/Person";
+import React from "react";
 import "./Driver.scss";
 import Drivercard from "../driverCard/DriverCard";
 import Slider from "react-slick";

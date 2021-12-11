@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { getDatabase, ref, push, set } from "firebase/database";
+import { uuid } from "uuidv4";
 import { Link } from "react-router-dom";
 import "./navbar.scss";
 
 const Navbar = () => {
+  //generate a unique id for the user
+  var UserId = localStorage.getItem("UserId");
+  if (UserId === null) {
+    localStorage.setItem("UserId", uuid());
+    UserId = localStorage.getItem("UserId");
+  }
   const [scrolled, setScrolled] = React.useState(false);
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -25,6 +33,7 @@ const Navbar = () => {
   const toggleLogin = () => {
     setLoginPopup(!LoginPopup);
   }; // sign up
+
   if (LoginPopup) {
     document.body.classList.add("active-LoginPopup");
   } else {
@@ -52,19 +61,46 @@ const Navbar = () => {
     password: "",
   });
 
+  const [signup, setsignup] = useState({
+    name: "",
+    email: "",
+    password: "",
+    phone: "",
+  });
+
   const handleChange = (event) => {
-    //put input in array state
     const name = event.target.name;
     const value = event.target.value;
     setLogin((values) => ({ ...values, [name]: value }));
   };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    //database sent
+    set(push(ref(getDatabase(), "users/" + UserId)), {
+      login,
+    }).then(() => {
+      console.log("data saved success");
+    });
+    setLoginPopup(!LoginPopup);
+  };
 
-  //   const handleSubmit = (event) => {
-  //     //submit array state to database
-  //     event.preventDefault();
-  //     console.log("submit value", login); //line connect database
-  //   };
+  const handleChangeSignup = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setsignup((values) => ({ ...values, [name]: value }));
+  };
 
+  const handleSubmitSignup = (event) => {
+    event.preventDefault();
+    console.log(signup);
+    //database sent
+    set(push(ref(getDatabase(), "users/" + UserId)), {
+      signup,
+    }).then(() => {
+      console.log("data saved success");
+    });
+    setSignupPopup(!SignupPopup);
+  };
   return (
     <>
       <div className={navbarClasses.join(" ")}>
@@ -91,7 +127,7 @@ const Navbar = () => {
           </li>
           <li>
             <p>
-              <Link to="/reservation">Reservation</Link>
+              <Link to="/myticket">Reservation</Link>
             </p>
           </li>
         </nav>
@@ -113,7 +149,7 @@ const Navbar = () => {
           </li>
           <li>
             <p>
-              <Link to="/reservation">ประวัติการจอง</Link>&emsp;&emsp;
+              <Link to="/myticket">ประวัติการจอง</Link>&emsp;&emsp;
             </p>
           </li>
         </nav>
@@ -149,8 +185,12 @@ const Navbar = () => {
                     <img className="Icon" src="/blueName.svg" alt="name-icon" />
                     <input
                       type="name"
+                      name="name"
+                      value={signup.name}
+                      onChange={handleChangeSignup}
                       placeholder="type your name"
                       className="borderless2"
+                      required
                     />
                   </div>
                 </div>
@@ -168,6 +208,9 @@ const Navbar = () => {
                     />
                     <input
                       type="email"
+                      name="email"
+                      value={signup.email}
+                      onChange={handleChangeSignup}
                       placeholder="type your email"
                       className="borderless2"
                     />
@@ -187,6 +230,9 @@ const Navbar = () => {
                     />
                     <input
                       type="password"
+                      name="password"
+                      value={signup.password}
+                      onChange={handleChangeSignup}
                       placeholder="type your password"
                       className="borderless2"
                     />
@@ -206,6 +252,9 @@ const Navbar = () => {
                     />
                     <input
                       type="phonenumber"
+                      name="phone"
+                      value={signup.phone}
+                      onChange={handleChangeSignup}
                       placeholder="type your Phone number"
                       className="borderless2"
                     />
@@ -214,7 +263,11 @@ const Navbar = () => {
                 <div className="line"></div>
               </div>
               <div className="button">
-                <button onClick={toggleSignup} className="signupButton">
+                <button
+                  type="button "
+                  onClick={handleSubmitSignup}
+                  className="signupButton"
+                >
                   sign up
                 </button>
               </div>
@@ -283,10 +336,18 @@ const Navbar = () => {
                   <div className="line"></div>
                 </div>
                 <div className="buttonLevel">
-                  <button onClick={toggleLogin} className="loginButton">
+                  <button
+                    type="button"
+                    onClick={handleSubmit}
+                    className="loginButton"
+                  >
                     login
                   </button>
-                  <button onClick={SignupOpen} className="signupButton">
+                  <button
+                    type="button"
+                    onClick={SignupOpen}
+                    className="signupButton"
+                  >
                     sign up{" >"}
                   </button>
                 </div>

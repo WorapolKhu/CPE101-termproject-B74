@@ -1,0 +1,284 @@
+#history {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#border {
+  left: 19.84%;
+  top: 16.65%;
+  position: absolute;
+  overflow: visible;
+}
+
+#bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 80%;
+  overflow: visible;
+  z-index: -1;
+}
+
+#HISTORY_ {
+  left: 430px;
+  top: 29.5px;
+  position: absolute;
+  overflow: visible;
+  width: 197px;
+  height: 41px;
+  cursor: pointer;
+  text-align: right;
+  font-family: Epilogue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  color: #2f749e;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+#RESERVATION_ {
+  left: 7px;
+  top: 29.5px;
+  position: absolute;
+  overflow: visible;
+  width: 281px;
+  height: 41px;
+  text-align: right;
+  font-family: Epilogue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+#Linemain {
+  fill: transparent;
+  stroke: #214c83;
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+
+#Rectanglehis {
+  fill: white;
+}
+
+.Rectanglehis {
+  position: absolute;
+  overflow: visible;
+  width: 439px;
+  height: 223px;
+  left: 336px;
+  top: 0px;
+  z-index: 1;
+}
+
+#Rectanglerev {
+  fill: #4074a4;
+  border-radius: 30px;
+}
+
+.Rectanglerev {
+  position: absolute;
+  overflow: visible;
+  width: 439px;
+  height: 223px;
+  left: 0px;
+  top: 0px;
+}
+
+#Rectanglebg {
+  fill: white;
+  -webkit-filter: drop-shadow(0px 7px 6px rgba(0, 0, 0, 0.161));
+          filter: drop-shadow(0px 7px 6px rgba(0, 0, 0, 0.161));
+}
+
+.Rectanglebg {
+  position: absolute;
+  overflow: visible;
+  width: 1176px;
+  height: 755px;
+  left: 0px;
+  top: 84px;
+}
+
+#Ellipsehead {
+  fill: #464e78;
+}
+
+.Ellipsehead {
+  position: absolute;
+  overflow: visible;
+  width: 300px;
+  height: 300px;
+  left: 0px;
+  top: 0px;
+}
+
+.space {
+  margin-top: 4.4em;
+}
+
+.card {
+  z-index: 4;
+  position: absolute;
+  margin: 3em 0em 0em 4em;
+  height: 10em;
+  width: 65em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #AACBF4;
+  -webkit-box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+          box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+  border-radius: 23px;
+}
+
+.card-body {
+  z-index: 3;
+  position: relative;
+  width: 12em;
+  max-height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1.8em;
+}
+
+.card-text {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 0 0;
+  padding: 0;
+  height: 8em;
+}
+
+.card-text h3, .card-text p {
+  margin-top: 0;
+}
+
+.card-text:after {
+  position: absolute;
+  bottom: -1;
+  content: "";
+  width: 100%;
+  height: 4em;
+}
+
+.flexlist-n {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 12em;
+}
+
+.flexlist-n span {
+  font-weight: 500;
+}
+
+.flexlist-v {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 18em;
+}
+
+.flexlist-n2 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 40em;
+}
+
+.flexlist-n2 span {
+  font-weight: 500;
+}
+
+.flexlist-v2 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 46em;
+}
+
+#Rect {
+  margin-top: .6em;
+  background-color: white;
+  width: 7em;
+  height: 2.6em;
+  border-radius: 11px;
+}
+
+#Rect span {
+  position: absolute;
+  margin: .5em 0 0 2.7em;
+}
+
+#Rect img {
+  position: absolute;
+  margin: .6em 0 0 .7em;
+}
+/*# sourceMappingURL=historypage.css.map */

@@ -4,6 +4,7 @@ import CompanyInfo from "../../section/companyInfo/CompanyInfo";
 import Vehicle from "../../section/vehicle/Vehicle";
 import Driver from "../../section/driver/Driver";
 import Footer from "../../section/footer/Footer";
+
 const Home = () => {
   return (
     <div>
