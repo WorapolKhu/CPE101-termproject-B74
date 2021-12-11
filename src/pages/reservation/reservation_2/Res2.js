@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Res2.css";
-
+import underline from "../../../img/icon/underline.svg";
 const Res2 = () => {
   const [input, setInput] = useState({
     //state that use in input form
@@ -26,81 +26,84 @@ const Res2 = () => {
 
   return (
     <main action="/reversation" className="res2">
-      <div className="box">
-        <div>
-          <p className="Headtext-warpper">Information</p>
-        </div>
-        <div className="box-content"></div>
+      <div className="container">
+        <h1>Personal Info</h1>
+        <img src={underline} alt="underline" />
         <form onSubmit={handleSubmit}>
+          <div className="name-input">
+            <label>
+              ชื่อ
+              <input
+                type="text"
+                name="name"
+                value={input.name || ""}
+                onChange={handleChange}
+                placeholder="ex. สุชาติ"
+                required
+              />
+            </label>
+            <label>
+              นามสกุล
+              <input
+                type="text"
+                name="lastname"
+                value={input.lastname || ""}
+                onChange={handleChange}
+                placeholder="ex. ชอบยิ้ม"
+                required
+              />
+            </label>
+          </div>
+
           <label>
-            <p>ชื่อ&emsp;</p>
-            <input
-              type="text"
-              name="name"
-              value={input.name || ""}
-              onChange={handleChange}
-              placeholder="Enter name"
-              required
-            />
-          </label>
-          <label>
-            <p>นามสกุล&emsp;</p>
-            <input
-              type="text"
-              name="lastname"
-              value={input.lastname || ""}
-              onChange={handleChange}
-              placeholder="Enter lastname"
-              required
-            />
-          </label>
-          <label>
-            <p>เบอร์โทรศัพท์&emsp;</p>
+            เบอร์โทรศัพท์
             <input
               type="number"
               name="phone"
               value={input.phone || ""}
               onChange={handleChange}
-              placeholder="Enter phone number"
+              placeholder="ex. 000 000 0000"
               required
             />
-          </label>
-          <label>
-            <p>จำนวนผู้โดยสาร&emsp;</p>
-            <input
-              className="numberpass"
-              type="number"
-              name="numpassenger"
-              value={input.numpassenger || ""}
-              onChange={handleChange}
-              placeholder=""
-              required
-            />
-            <p className="subtext">คน</p>
           </label>
           <label className="text">
-            <p>ข้อความถึงคนขับ&emsp;</p>
+            ข้อความถึงคนขับ
             <textarea
               rows={10}
               cols={30}
               type="text"
               name="texttodriver"
               value={input.texttodriver || ""}
-              placeholder="message ..."
+              placeholder="ex. ตอนมารับลงสะพานเสร็จให้ชิดซ้ายทันที บ้านอยู่ในซอยติดกับสะพานเลย"
               onChange={handleChange}
               required
             />
           </label>
-          <Link
-            type="submit"
-            className="btn btn-primary"
-            to="/reservation-confirm"
-          >
-            Submit
-          </Link>
+          <div className="btn-container">
+            <Link className="confirm-cta btn" to="/reservation">
+              กลับ
+            </Link>
+            <Link className="back-cta btn" to="/reservation-confirm">
+              ตรวจสอบข้อมูล
+            </Link>
+          </div>
         </form>
       </div>
     </main>
   );
 };
 export default Res2;
+
+// <label>
+//   <p>จำนวนผู้โดยสาร</p>
+//   <input
+//     className="numberpass"
+//     type="number"
+//     name="numpassenger"
+//     value={input.numpassenger || ""}
+//     onChange={handleChange}
+//     placeholder=""
+//     required
+//   />
+//   <p className="subtext">คน</p>
+// </label>;

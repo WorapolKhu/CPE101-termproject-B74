@@ -1,126 +1,82 @@
 .res1 {
-    .Information {
-        width: 80%;
-        margin: 5rem auto;
-        padding: 1.5rem;
-        height: 420px;
-        border: 1px solid rgb(128, 128, 128);
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
+  .container {
+    // container setting-------------------------------------
+    width: 45rem;
+    height: 28rem;
+    margin: 5rem auto;
+    padding: 1.5rem;
+    border: 1px solid rgb(128, 128, 128);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    position: relative;
+    // General setting----------------------------------------
+    option {
+      font-family: "sukhumvit";
+      color: black;
     }
+    select {
+      font-family: "sukhumvit";
+      border: none;
+      border-bottom: solid black 1px;
+      color: gray;
+      font-size: 12px;
+      width: 15em;
+      display: block;
+      margin-top: 0.4rem;
+    }
+    label {
+      font-family: "sukhumvit";
+      font-size: 12px;
+      display: block;
+      margin-top: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      font-family: "Epilogue";
+      color: #565656;
+    }
+    // Component setting-----------------------------------------
 
-    .Information h1 {
-        font-size: 30px;
-        font-family: "Epilogue";
+    .inline {
+      align-items: center;
+      display: inline-flex;
+      column-gap: 4rem;
     }
-
-    .Destination {
-        column-count: 2;
-        align-items: center;
-    }
-
-    .Destination option {
-        font-family: "sukhumvit";
-        color: black;
-    }
-
-    .Destination select {
-        font-family: "sukhumvit";
-        border: none;
-        border-bottom: solid black 1px;
-        color: gray;
-        font-size: 11px;
-        width: 200px;
-    }
-
-    .DateandCar {
-        column-count: 2;
-        align-items: center;
-        list-style: none;
-    }
-
-    .Car option {
-        font-family: "sukhumvit";
-        color: black;
-    }
-
-    .Car select {
-        font-family: "sukhumvit";
-        border: none;
-        border-bottom: solid black 1px;
-        color: gray;
-        font-size: 11px;
-        width: 200px;
-    }
-
-    .Driver select {
-        font-family: "sukhumvit";
-        border: none;
-        border-bottom: solid black 1px;
-        color: gray;
-        font-size: 11px;
-        width: 200px;
-    }
-    .Driver option {
-        font-family: "sukhumvit";
-        color: black;
-    }
-
-    .Date li {
-        list-style: none;
-        font-family: "sukhumvit";
-        margin-top: 20px;
-        font-size: 12px;
-    }
-
-    .Car li {
-        list-style: none;
-        font-family: "sukhumvit";
-        margin-top: 20px;
-        font-size: 12px;
-    }
-    .Driver li {
-        list-style: none;
-        font-family: "sukhumvit";
-        margin-top: 20px;
-        font-size: 12px;
-    }
-    .Destination li {
-        list-style: none;
-        font-family: "sukhumvit";
-        font-size: 12px;
-    }
-
-    c {
-        color: gray;
-        border-bottom: 1px solid black;
-        width: 20%;
-        font-family: "sukhumvit";
-    }
-
-    .Destination ul {
-        list-style: none;
-        background-color: wheat;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        color: violet;
-    }
-
-    .Next button {
-        position: relative;
-        text-decoration: none;
-        top: 50px;
-        border-radius: 10px;
-        background-color: #fe4600;
-        border: #fe4600;
-        box-shadow: 1.5px 1.5px 1.5px #ff936a;
+    .btn-container {
+      display: inline-flex;
+      width: 100%;
+      justify-content: center;
+      position: absolute;
+      bottom: 2rem;
+      .btn {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+        border-radius: 4em;
         color: white;
-        font-family: "sukhumvit";
-        width: 5rem;
-    }
-
-    .Next Link {
+        padding: 0.5em 1.5em;
         text-decoration: none;
+      }
+      .back-cta {
+        background-color: #4fd601;
+        box-shadow: 0.1px 5px 15px 0px #7cfa34;
+      }
+      .confirm-cta {
+        margin-left: 5rem;
+        background-color: #fe4600;
+        box-shadow: 0.1px 5px 15px 0px #ff936a;
+      }
     }
+  }
 }
+// .Next {
+//       margin-top: 3rem;
+//       a {
+//         font-size: 0.8rem;
+//         border-radius: 4em;
+//         color: white;
+//         background-color: #fe4600;
+//         padding: 0.5em 1.5em;
+//         box-shadow: 1.5px 1.5px 1.5px #ff936a;
+//         text-decoration: none;
+//       }
+//     }

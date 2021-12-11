@@ -1,136 +1,86 @@
-.res1 .Information {
-  width: 80%;
+.res1 .container {
+  width: 45rem;
+  height: 28rem;
   margin: 5rem auto;
   padding: 1.5rem;
-  height: 420px;
   border: 1px solid gray;
   -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
-
-.res1 .Information h1 {
-  font-size: 30px;
-  font-family: "Epilogue";
-}
-
-.res1 .Destination {
-  -webkit-column-count: 2;
-          column-count: 2;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.res1 .Destination option {
-  font-family: "sukhumvit";
-  color: black;
-}
-
-.res1 .Destination select {
-  font-family: "sukhumvit";
-  border: none;
-  border-bottom: solid black 1px;
-  color: gray;
-  font-size: 11px;
-  width: 200px;
-}
-
-.res1 .DateandCar {
-  -webkit-column-count: 2;
-          column-count: 2;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style: none;
-}
-
-.res1 .Car option {
-  font-family: "sukhumvit";
-  color: black;
-}
-
-.res1 .Car select {
-  font-family: "sukhumvit";
-  border: none;
-  border-bottom: solid black 1px;
-  color: gray;
-  font-size: 11px;
-  width: 200px;
-}
-
-.res1 .Driver select {
-  font-family: "sukhumvit";
-  border: none;
-  border-bottom: solid black 1px;
-  color: gray;
-  font-size: 11px;
-  width: 200px;
-}
-
-.res1 .Driver option {
-  font-family: "sukhumvit";
-  color: black;
-}
-
-.res1 .Date li {
-  list-style: none;
-  font-family: "sukhumvit";
-  margin-top: 20px;
-  font-size: 12px;
-}
-
-.res1 .Car li {
-  list-style: none;
-  font-family: "sukhumvit";
-  margin-top: 20px;
-  font-size: 12px;
-}
-
-.res1 .Driver li {
-  list-style: none;
-  font-family: "sukhumvit";
-  margin-top: 20px;
-  font-size: 12px;
-}
-
-.res1 .Destination li {
-  list-style: none;
-  font-family: "sukhumvit";
-  font-size: 12px;
-}
-
-.res1 c {
-  color: gray;
-  border-bottom: 1px solid black;
-  width: 20%;
-  font-family: "sukhumvit";
-}
-
-.res1 .Destination ul {
-  list-style: none;
-  background-color: wheat;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  color: violet;
-}
-
-.res1 .Next button {
+  border-radius: 7px;
   position: relative;
-  text-decoration: none;
-  top: 50px;
-  border-radius: 10px;
-  background-color: #fe4600;
-  border: #fe4600;
-  -webkit-box-shadow: 1.5px 1.5px 1.5px #ff936a;
-          box-shadow: 1.5px 1.5px 1.5px #ff936a;
-  color: white;
-  font-family: "sukhumvit";
-  width: 5rem;
 }
 
-.res1 .Next Link {
+.res1 .container option {
+  font-family: "sukhumvit";
+  color: black;
+}
+
+.res1 .container select {
+  font-family: "sukhumvit";
+  border: none;
+  border-bottom: solid black 1px;
+  color: gray;
+  font-size: 12px;
+  width: 15em;
+  display: block;
+  margin-top: 0.4rem;
+}
+
+.res1 .container label {
+  font-family: "sukhumvit";
+  font-size: 12px;
+  display: block;
+  margin-top: 1rem;
+}
+
+.res1 .container h1 {
+  font-size: 2rem;
+  font-family: "Epilogue";
+  color: #565656;
+}
+
+.res1 .container .inline {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
+}
+
+.res1 .container .btn-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 2rem;
+}
+
+.res1 .container .btn-container .btn {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  border-radius: 4em;
+  color: white;
+  padding: 0.5em 1.5em;
   text-decoration: none;
+}
+
+.res1 .container .btn-container .back-cta {
+  background-color: #4fd601;
+  -webkit-box-shadow: 0.1px 5px 15px 0px #7cfa34;
+          box-shadow: 0.1px 5px 15px 0px #7cfa34;
+}
+
+.res1 .container .btn-container .confirm-cta {
+  margin-left: 5rem;
+  background-color: #fe4600;
+  -webkit-box-shadow: 0.1px 5px 15px 0px #ff936a;
+          box-shadow: 0.1px 5px 15px 0px #ff936a;
 }
 /*# sourceMappingURL=Res1.css.map */

@@ -1,199 +1,162 @@
-.res3 .Confirmation {
-  width: 45rem;
+.res3 .container {
+  width: 40rem;
+  height: 30rem;
   margin: 5rem auto;
   padding: 1.5rem;
-  height: 420px;
   border: 1px solid gray;
   -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border-radius: 7px;
+  position: relative;
 }
 
-.res3 .image {
-  width: 7rem;
-  position: absolute;
-  left: 55%;
-  height: 10rem;
-  border: 1px solid gray;
+.res3 .container .grid-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "tripInfo tripInfo tripInfo driverInfo driverInfo" "userInfo userInfo userInfo driverInfo driverInfo";
 }
 
-.res3 .first {
-  font-family: "sukhumvit";
+.res3 .container .trip-info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: tripInfo;
+}
+
+.res3 .container .customer-info {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: userInfo;
+}
+
+.res3 .container .driver-info {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: driverInfo;
+}
+
+.res3 .container h1 {
+  font-size: 2rem;
+  font-family: "Epilogue";
+  color: #565656;
+}
+
+.res3 .container h3 {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.res3 .container .list {
+  display: block;
+}
+
+.res3 .container .list ul {
+  margin-bottom: 0.2rem;
   font-size: 12px;
-  -webkit-columns: 2;
-          columns: 2;
   list-style: none;
-  width: 300px;
+  width: 19rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.res3 .first c {
-  font-family: "sukhumvit";
+.res3 .container .list ul .reciept-data {
+  margin-left: 2rem;
+  padding: 0.1em 1rem;
+  text-indent: 1em;
   font-size: 11px;
   border-radius: 10px;
-  background-color: #c0bebe;
-  width: 100px;
-  height: 10px;
+  background-color: #ebebeb;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-.res3 .second {
-  font-family: "sukhumvit";
-  font-size: 12px;
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
-}
-
-.res3 .second c {
-  font-family: "sukhumvit";
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
-}
-
-.res3 .third {
-  font-family: "sukhumvit";
-  font-size: 12px;
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
-}
-
-.res3 .third c {
-  font-family: "sukhumvit";
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
-}
-
-.res3 .fouth {
-  font-family: "sukhumvit";
-  font-size: 12px;
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
-}
-
-.res3 .fouth c {
-  font-family: "sukhumvit";
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
-}
-
-.res3 .fifth {
-  font-family: "sukhumvit";
-  font-size: 12px;
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
-}
-
-.res3 .fifth c {
-  font-family: "sukhumvit";
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
-}
-
-.res3 .contect {
+.res3 .container .driver-info {
   color: gray;
   font-size: 11px;
-  font-family: "sukhumvit";
+  vertical-align: center;
+  margin: 1.5rem auto;
 }
 
-.res3 .contect .drivercontect {
+.res3 .container .driver-info .userImage {
+  width: 7rem;
+  height: 10rem;
+  padding: white;
+  right: 5rem;
+  border: solid lightgray;
+}
+
+.res3 .container .driver-info .driver-contact-container {
+  margin: 0rem auto;
+  list-style: none;
+  vertical-align: center;
   border: 1px solid gray;
-  list-style: none;
-  width: 100px;
   border-radius: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0.3em 1em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.res3 .Info {
-  font-family: "sukhumvit";
-  font-size: 12px;
+.res3 .container .driver-info .driver-contact-container li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-.res3 .Info .Name {
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
+.res3 .container .driver-info .driver-contact-container li img {
+  width: 1em;
+  margin-right: 0.25rem;
 }
 
-.res3 .Info .Name c {
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
+.res3 .container .driver-info .driver-contact-container .line-id {
+  margin-left: 1rem;
 }
 
-.res3 .Info .Lastname {
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
+.res3 .container .btn-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 2rem;
 }
 
-.res3 .Info .Lastname c {
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
+.res3 .container .btn-container .btn {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  border-radius: 4em;
+  color: white;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
 }
 
-.res3 .Info .Number {
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
-}
-
-.res3 .Info .Number c {
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
-}
-
-.res3 .Info .Passenger {
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
-}
-
-.res3 .Info .Passenger c {
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
-}
-
-.res3 .button {
-  -webkit-columns: 2;
-          columns: 2;
-  margin-top: 1.5rem;
-}
-
-.res3 .button .edit button {
-  font-family: "sukhumvit";
-  border-radius: 10px;
+.res3 .container .btn-container .back-cta {
   background-color: #4fd601;
-  border: #4fd601;
-  -webkit-box-shadow: 1.5px 1.5px 1.5px #7cfa34;
-          box-shadow: 1.5px 1.5px 1.5px #7cfa34;
-  color: white;
-  margin: 0.2rem;
+  -webkit-box-shadow: 0.1px 5px 15px 0px #7cfa34;
+          box-shadow: 0.1px 5px 15px 0px #7cfa34;
 }
 
-.res3 .button .okay button {
-  font-family: "sukhumvit";
-  border-radius: 10px;
+.res3 .container .btn-container .confirm-cta {
+  margin-left: 5rem;
   background-color: #fe4600;
-  border: #fe4600;
-  -webkit-box-shadow: 1.5px 1.5px 1.5px #ff936a;
-          box-shadow: 1.5px 1.5px 1.5px #ff936a;
-  color: white;
-  margin: 0.2rem;
+  -webkit-box-shadow: 0.1px 5px 15px 0px #ff936a;
+          box-shadow: 0.1px 5px 15px 0px #ff936a;
 }
 /*# sourceMappingURL=Res3.css.map */

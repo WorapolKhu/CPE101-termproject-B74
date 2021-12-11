@@ -1,12 +1,7 @@
-import React, { useState } from "react";
-import './signup.scss';
+import "./signup.scss";
 
 const Signup = (props) => {
-   
-    return (
-        <>
-        </>
-    );
-}
+  return <></>;
+};
 
 export default Signup;

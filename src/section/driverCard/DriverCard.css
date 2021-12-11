@@ -1,12 +1,13 @@
 .cards {
+  margin-bottom: 30px;
   background-color: white;
   width: 250px;
-  -webkit-box-shadow: 2px 2px 30px #c1c1c1;
-          box-shadow: 2px 2px 30px #c1c1c1;
+  -webkit-box-shadow: 0px 0px 30px #c1c1c1;
+          box-shadow: 0px 0px 30px #c1c1c1;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  left: 42.5%;
+  left: 13%;
 }
 
 .cards a {
@@ -117,8 +118,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #DBEFB2;
-  color: sienna;
+  background-color: #acc487;
+  color: black;
   font-weight: 700;
   letter-spacing: 1px;
   border-radius: 20px;
@@ -128,7 +129,7 @@
 
 .cards .readallButton:hover {
   color: white;
-  background-color: yellow;
+  background-color: #5E6790;
   -webkit-transition: all ease 0.5S;
   transition: all ease 0.5S;
 }
@@ -160,4 +161,4 @@
     opacity: 1;
   }
 }
-/*# sourceMappingURL=driverCard.css.map */
+/*# sourceMappingURL=DriverCard.css.map */

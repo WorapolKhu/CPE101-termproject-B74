@@ -40,14 +40,16 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <ul className="register-nav">
-        <li>
-          <Link to="/signup">SignUp</Link>
-        </li>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
-      </ul>
+      <nav className="register-nav">
+        <ul className="container">
+          <li>
+            <Link to="/signup">SignUp</Link>
+          </li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };

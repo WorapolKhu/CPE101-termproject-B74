@@ -23,12 +23,12 @@ const PriceChecker = () => {
             </label>
           </div>
           <div className="confirm-cta">
-            <button className="btn-primary">
-              <Link to="/reservation">จอง</Link>
-            </button>
-            <button className="btn-secondary">
-              <Link to="/reservation">เช็คราคา</Link>
-            </button>
+            <Link className="btn-primary" to="/reservation">
+              จอง
+            </Link>
+            <Link className="btn-secondary" to="/reservation">
+              เช็คราคา
+            </Link>
           </div>
         </form>
       </div>

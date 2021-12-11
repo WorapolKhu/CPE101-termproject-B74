@@ -5,14 +5,14 @@ import Home from "./pages/home/Home";
 import Res1 from "./pages/reservation/reservation_1/Res1";
 import Res2 from "./pages/reservation/reservation_2/Res2";
 import Res3 from "./pages/reservation/reservation_3/Res3";
-import Navbar from "./Components/navbar/navbar/navbar";
-import Login from "./Components/modals/login/Login"
+import Login from "./Components/modals/login/Login";
 import Signup from "./Components/modals/signup/Signup";
+import MainNavigation from "./Components/navbar/mainnavbar/MainNavigation";
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <MainNavigation />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/reservation" element={<Res1 />} />

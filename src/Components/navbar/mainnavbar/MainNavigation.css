@@ -7,7 +7,7 @@
 .mainnav {
   position: -webkit-sticky;
   position: sticky;
-  width: 100vw;
+  width: 100%;
   padding: 1.5rem 6rem;
   padding-bottom: 0rem;
   display: -webkit-box;
@@ -25,6 +25,14 @@
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+
+.mainnav .logo a {
+  font-family: "Epilogue", sans-serif;
+  text-decoration: none;
+  color: #707070;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .mainnav .primary-nav {
@@ -50,21 +58,46 @@
 }
 
 .mainnav .primary-nav ul li .eng-nav {
+  padding-right: 1.5rem;
   color: #505050;
-  font-size: 1.2em;
+  font-size: 1rem;
+  font-weight: bolder;
 }
 
 .mainnav .primary-nav ul li .thai-nav {
+  margin-left: 0.15em;
+  font-weight: lighter;
   font-size: 0.75rem;
   color: #b2b2b2;
 }
 
 .mainnav .register-nav {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
   -ms-flex-item-align: end;
       align-self: flex-end;
   text-align: right;
+}
+
+.mainnav .register-nav .container {
+  padding: 0.3em 1em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  background: linear-gradient(131deg, #a69eff 0%, #7499ff 100%);
+  border-radius: 3rem;
+}
+
+.mainnav .register-nav .container a {
+  font-size: 0.8rem;
+  color: white;
 }
 /*# sourceMappingURL=MainNavigation.css.map */
