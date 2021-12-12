@@ -1,11 +1,16 @@
-ul {
-  list-style: none;
-}
-
 .footer {
   background-color: #183658;
   color: white;
   padding: 5rem;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer li {
+  margin: 0px;
+  padding: 0px;
 }
 
 .footer .container {
@@ -14,17 +19,34 @@ ul {
   display: flex;
 }
 
+.footer .container .logo {
+  font-size: 3em;
+  font-weight: bolder;
+  margin: auto;
+}
+
 .footer .container li {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.footer .container li .logo {
-  font-size: 3em;
+.footer .container li .contactus li {
+  position: relative;
+}
+
+.footer .container li .contactus li img {
+  vertical-align: center;
+  margin-right: 1rem;
 }
 
 .footer .container .headline {
   color: #ffb32a;
+  margin-bottom: 1rem;
+}
+
+.footer .container a {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=Footer.css.map */

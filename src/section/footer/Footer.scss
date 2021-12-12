@@ -1,20 +1,41 @@
-ul {
-  list-style: none;
-}
 .footer {
+  ul {
+    list-style: none;
+  }
+  li {
+    margin: 0px;
+    padding: 0px;
+  }
   background-color: #183658;
   color: white;
   padding: 5rem;
   .container {
     display: flex;
+    .logo {
+      font-size: 3em;
+      font-weight: bolder;
+      margin: auto;
+    }
     li {
       flex: 1;
-      .logo {
-        font-size: 3em;
+
+      .contactus {
+        li {
+          position: relative;
+          img {
+            vertical-align: center;
+            margin-right: 1rem;
+          }
+        }
       }
     }
     .headline {
       color: #ffb32a;
+      margin-bottom: 1rem;
+    }
+    a {
+      text-decoration: none;
+      color: white;
     }
   }
 }
