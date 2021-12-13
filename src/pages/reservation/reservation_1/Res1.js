@@ -18,10 +18,10 @@ const Res1 = () => {
 
   return (
     <div className="res1">
+      <img className="statusIcon" src="/res1.svg" alt="res1-icon" />
       <div className="container">
         <h1>Trip Detail</h1>
         <img src={underline} alt="underline" />
-
         <form onSubmit={handleSubmit}>
           {/* Place selector */}
           <div className="inline">
