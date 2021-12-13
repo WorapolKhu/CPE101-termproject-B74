@@ -1,0 +1,56 @@
+.historycard {
+  justify-content: center;
+  align-items: center;
+  .box {
+    display: inline-flex;
+    padding: 2rem;
+    background-color: #aacbf4;
+    border-radius: 2rem;
+    column-gap: 2rem;
+    position: relative;
+    width: 90%;
+
+    .driverImage {
+      img {
+        flex: 1;
+        width: 5rem;
+        clip-path: circle(2.5rem);
+        margin: auto;
+      }
+    }
+    h3 {
+      font-size: 0.8rem;
+      margin-right: 1em;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+    .detail {
+      display: inline-flex;
+      flex: 1;
+    }
+    .col {
+      display: flex;
+      flex-direction: column;
+    }
+    .review-cta {
+      position: absolute;
+      bottom: 1rem;
+      right: 1em;
+      a {
+        font-size: 0.8rem;
+        padding: 1em 2em;
+        background-color: white;
+        border-radius: 1.2em;
+        color: #464e78;
+        text-decoration: none;
+        font-weight: bold;
+        img {
+          vertical-align: middle;
+          width: 1em;
+          margin-right: 1em;
+        }
+      }
+    }
+  }
+}

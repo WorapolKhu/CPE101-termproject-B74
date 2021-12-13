@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Footer.css";
 import line from "../../img/icon/line-white.svg";
 import fb from "../../img/icon/facebook-white.svg";

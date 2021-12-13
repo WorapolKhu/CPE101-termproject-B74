@@ -1,0 +1,178 @@
+.mediaViewInfo {
+  --web-view-name: reversation – 1;
+  --web-view-id: reversation__1;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+:root {
+  --web-view-ids: reversation__1;
+}
+
+#reversation {
+  background-image: url(../../../img//picture/history-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  .container {
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 8rem;
+    padding: 4rem;
+    padding-top: 3rem;
+    border-radius: 5rem;
+    position: relative;
+    transform-style: preserve-3d;
+    // Head Manu ---------------------------------------
+    .head-cta {
+      position: absolute;
+      top: -4rem;
+      left: 0;
+      display: flex;
+      // z-index: -1;
+      transform: translateZ(-1px);
+      .reservation-cta {
+        padding: 1.5rem 4rem;
+        padding-bottom: 10rem;
+        background-color: white;
+        border-radius: 2rem 2rem 0rem 0rem;
+        z-index: 2;
+        font-weight: bold;
+      }
+      .history-cta {
+        padding: 1.5rem 4rem;
+        padding-left: 5rem;
+        background-color: #4074a4;
+        border-radius: 0rem 2rem 0rem 0rem;
+        z-index: 1;
+        position: relative;
+        right: 2rem;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+
+    // Order state------------------------------------
+    .processes {
+      // padding-top: 1rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: baseline;
+
+      // Line
+      .THICC-line {
+        height: 1rem;
+        width: 8rem;
+        background-color: #99bbe8;
+        bottom: 1.2rem;
+        position: relative;
+        .normal-line {
+          height: 0.2rem;
+          width: 8rem;
+          background-color: #99bbe8;
+          top: -7px;
+          position: absolute;
+        }
+      }
+      // Number
+      .process {
+        $numberPadding: 2em;
+        border-radius: 50%;
+        width: $numberPadding;
+        height: $numberPadding;
+        font-size: 2rem;
+        background: #acd5ec;
+        color: #464e78;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        h3 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        p {
+          width: 5rem;
+          font-size: 0.7rem;
+          position: absolute;
+          bottom: -2rem;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #a1c7db;
+        }
+      }
+
+      .current-status {
+        background-color: #464e78;
+        color: #cee5f1;
+        p {
+          color: #464e78;
+        }
+      }
+    }
+    .another-normal-line-container {
+      margin-top: 2.5rem;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .another-normal-line {
+        height: 0.2rem;
+        width: 16rem;
+        vertical-align: middle;
+        position: absolute;
+        background-color: #99bbe8;
+      }
+    }
+    // Trip detail----------------------------------------------
+    .detail {
+      display: flex;
+      .trip-info {
+        flex: 3;
+        margin-top: 2rem;
+        li {
+          display: grid;
+          grid-template-columns: 2fr 3fr;
+          font-size: 1rem;
+          h4 {
+            font-size: 1.2em;
+            color: rgba(70, 78, 120, 1);
+            font-weight: bold;
+          }
+          p {
+            color: rgba(70, 78, 120, 1);
+          }
+        }
+      }
+      .img-container {
+        flex: 1;
+        margin: auto;
+        margin-top: 3rem;
+        img {
+          height: 8rem;
+          clip-path: circle(4rem);
+          margin: auto;
+        }
+      }
+    }
+    .cancle-cta {
+      position: absolute;
+      bottom: 3rem;
+      right: 3rem;
+      text-decoration: none;
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 1em 2em;
+        background-color: #dd9fdf;
+        border-radius: 2em;
+      }
+    }
+  }
+}
