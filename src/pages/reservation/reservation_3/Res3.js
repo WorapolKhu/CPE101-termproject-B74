@@ -9,6 +9,7 @@ import userImage from "../../../img/icon/people.svg";
 const Res3 = () => {
   return (
     <div className="res3">
+       <img className="statusIcon" src="/res3.svg" alt="res3-icon" />
       <div className="container">
         <h1>Confirmation</h1>
         <img src={underline} alt="underline" />
