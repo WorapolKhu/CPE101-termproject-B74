@@ -13,15 +13,16 @@ $colorText: #404646;
   .container {
     background-color: white;
     width: 60%;
+    height: 32rem;
     margin: 0 auto;
     margin-top: 8rem;
     padding: 3rem;
     padding-top: 3rem;
-    border-radius: 5rem;
+    border-radius: 3.5rem;
     transform-style: preserve-3d;
     display: flex;
     flex-direction: column;
-    row-gap: 1.5rem;
+    row-gap: 2.5rem;
     justify-content: center;
     .history-card {
       margin: auto;
@@ -38,6 +39,7 @@ $colorText: #404646;
         background-color: #4074a4;
         border-radius: 2rem 0rem 0rem 0rem;
         z-index: 1;
+        font-size: large;
         a {
           font-weight: lighter;
           text-decoration: none;
@@ -53,6 +55,7 @@ $colorText: #404646;
         z-index: 2;
         position: relative;
         right: 2rem;
+        font-size: large;
       }
     }
   }

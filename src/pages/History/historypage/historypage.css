@@ -11,11 +11,12 @@
 #history .container {
   background-color: white;
   width: 60%;
+  height: 32rem;
   margin: 0 auto;
   margin-top: 8rem;
   padding: 3rem;
   padding-top: 3rem;
-  border-radius: 5rem;
+  border-radius: 3.5rem;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   display: -webkit-box;
@@ -25,7 +26,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 1.5rem;
+  row-gap: 2.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -52,6 +53,7 @@
   background-color: #4074a4;
   border-radius: 2rem 0rem 0rem 0rem;
   z-index: 1;
+  font-size: large;
 }
 
 #history .container .head-cta .reservation-cta a {
@@ -69,5 +71,6 @@
   z-index: 2;
   position: relative;
   right: 2rem;
+  font-size: large;
 }
 /*# sourceMappingURL=historypage.css.map */
