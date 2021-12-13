@@ -19,6 +19,10 @@ $colorText: #404646;
     padding-top: 3rem;
     border-radius: 5rem;
     transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    justify-content: center;
     .history-card {
       margin: auto;
     }

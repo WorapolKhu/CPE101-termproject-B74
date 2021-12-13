@@ -23,6 +23,15 @@ const History = () => {
           travelDate="28/02/2564"
           to="ธนบุรี"
         />
+        <HistoryCard
+          className="history-card"
+          bookedDate="28/02/2564"
+          from="กรุงเทพฯ"
+          driver="นายสมมุติ เดอะไดร์ฟเวอร์"
+          price="40 บาท"
+          travelDate="5/03/2564"
+          to="ธนบุรี"
+        />
       </div>
     </div>
   );

@@ -1,6 +1,4 @@
 .historycard {
-  justify-content: center;
-  align-items: center;
   .box {
     display: inline-flex;
     padding: 2rem;
@@ -8,7 +6,7 @@
     border-radius: 2rem;
     column-gap: 2rem;
     position: relative;
-    width: 90%;
+    width: 100%;
 
     .driverImage {
       img {
