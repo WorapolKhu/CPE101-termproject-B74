@@ -21,9 +21,11 @@
     width: 60%;
     margin: 0 auto;
     margin-top: 8rem;
-    padding: 4rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
     padding-top: 3rem;
-    border-radius: 5rem;
+    padding-bottom: 2rem;
+    border-radius: 3.5rem;
     position: relative;
     transform-style: preserve-3d;
     // Head Manu ---------------------------------------
@@ -41,6 +43,7 @@
         border-radius: 2rem 2rem 0rem 0rem;
         z-index: 2;
         font-weight: bold;
+        font-size: large;
       }
       .history-cta {
         padding: 1.5rem 4rem;
@@ -50,10 +53,12 @@
         z-index: 1;
         position: relative;
         right: 2rem;
-        a {
+        font-size: large;
+        a { 
           text-decoration: none;
           color: white;
         }
+      }
       }
     }
 
@@ -136,6 +141,7 @@
       .trip-info {
         flex: 3;
         margin-top: 2rem;
+        margin-bottom: 1.5rem;
         li {
           display: grid;
           grid-template-columns: 2fr 3fr;
@@ -161,18 +167,25 @@
         }
       }
     }
-    .cancle-cta {
-      position: absolute;
-      bottom: 3rem;
-      right: 3rem;
+  .cancle-cta {
+    color: white;
+    background-color: #707070;
+    border-radius: 3rem;
+    width: 9.7rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: auto;
+    box-shadow: 0px 0px 10px 0px #707070;
+    a { 
       text-decoration: none;
-      a {
-        text-decoration: none;
-        color: white;
-        padding: 1em 2em;
-        background-color: #dd9fdf;
-        border-radius: 2em;
-      }
+      color: white;
     }
+  }
+  .cancle-cta:hover {
+    background-color: #4074a4;
+    transition: all ease 0.5s;
   }
 }

@@ -25,9 +25,11 @@
   width: 60%;
   margin: 0 auto;
   margin-top: 8rem;
-  padding: 4rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
   padding-top: 3rem;
-  border-radius: 5rem;
+  padding-bottom: 2rem;
+  border-radius: 3.5rem;
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -51,6 +53,7 @@
   border-radius: 2rem 2rem 0rem 0rem;
   z-index: 2;
   font-weight: bold;
+  font-size: large;
 }
 
 #reversation .container .head-cta .history-cta {
@@ -61,6 +64,7 @@
   z-index: 1;
   position: relative;
   right: 2rem;
+  font-size: large;
 }
 
 #reversation .container .head-cta .history-cta a {
@@ -68,7 +72,7 @@
   color: white;
 }
 
-#reversation .container .processes {
+#reversation .processes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,7 +84,7 @@
           align-items: baseline;
 }
 
-#reversation .container .processes .THICC-line {
+#reversation .processes .THICC-line {
   height: 1rem;
   width: 8rem;
   background-color: #99bbe8;
@@ -88,7 +92,7 @@
   position: relative;
 }
 
-#reversation .container .processes .THICC-line .normal-line {
+#reversation .processes .THICC-line .normal-line {
   height: 0.2rem;
   width: 8rem;
   background-color: #99bbe8;
@@ -96,7 +100,7 @@
   position: absolute;
 }
 
-#reversation .container .processes .process {
+#reversation .processes .process {
   border-radius: 50%;
   width: 2em;
   height: 2em;
@@ -108,7 +112,7 @@
   position: relative;
 }
 
-#reversation .container .processes .process h3 {
+#reversation .processes .process h3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -116,7 +120,7 @@
           transform: translate(-50%, -50%);
 }
 
-#reversation .container .processes .process p {
+#reversation .processes .process p {
   width: 5rem;
   font-size: 0.7rem;
   position: absolute;
@@ -127,16 +131,16 @@
   color: #a1c7db;
 }
 
-#reversation .container .processes .current-status {
+#reversation .processes .current-status {
   background-color: #464e78;
   color: #cee5f1;
 }
 
-#reversation .container .processes .current-status p {
+#reversation .processes .current-status p {
   color: #464e78;
 }
 
-#reversation .container .another-normal-line-container {
+#reversation .another-normal-line-container {
   margin-top: 2.5rem;
   position: relative;
   display: -webkit-box;
@@ -150,7 +154,7 @@
           align-items: center;
 }
 
-#reversation .container .another-normal-line-container .another-normal-line {
+#reversation .another-normal-line-container .another-normal-line {
   height: 0.2rem;
   width: 16rem;
   vertical-align: middle;
@@ -158,20 +162,21 @@
   background-color: #99bbe8;
 }
 
-#reversation .container .detail {
+#reversation .detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#reversation .container .detail .trip-info {
+#reversation .detail .trip-info {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
   margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-#reversation .container .detail .trip-info li {
+#reversation .detail .trip-info li {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 3fr;
@@ -179,17 +184,17 @@
   font-size: 1rem;
 }
 
-#reversation .container .detail .trip-info li h4 {
+#reversation .detail .trip-info li h4 {
   font-size: 1.2em;
   color: #464e78;
   font-weight: bold;
 }
 
-#reversation .container .detail .trip-info li p {
+#reversation .detail .trip-info li p {
   color: #464e78;
 }
 
-#reversation .container .detail .img-container {
+#reversation .detail .img-container {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -197,25 +202,42 @@
   margin-top: 3rem;
 }
 
-#reversation .container .detail .img-container img {
+#reversation .detail .img-container img {
   height: 8rem;
   -webkit-clip-path: circle(4rem);
           clip-path: circle(4rem);
   margin: auto;
 }
 
-#reversation .container .cancle-cta {
-  position: absolute;
-  bottom: 3rem;
-  right: 3rem;
-  text-decoration: none;
+#reversation .cancle-cta {
+  color: white;
+  background-color: #707070;
+  border-radius: 3rem;
+  width: 9.7rem;
+  height: 2.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  margin: auto;
+  -webkit-box-shadow: 0px 0px 10px 0px #707070;
+          box-shadow: 0px 0px 10px 0px #707070;
 }
 
-#reversation .container .cancle-cta a {
+#reversation .cancle-cta a {
   text-decoration: none;
   color: white;
-  padding: 1em 2em;
-  background-color: #dd9fdf;
-  border-radius: 2em;
+}
+
+#reversation .cancle-cta:hover {
+  background-color: #4074a4;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 /*# sourceMappingURL=pagereserve.css.map */

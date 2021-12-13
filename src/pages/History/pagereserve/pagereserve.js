@@ -88,9 +88,9 @@ const Information = () => {
                 alt="driverImg"
               />
             </div>
-            <div className="cancle-cta">
+          </div>
+          <div className="cancle-cta">
               <Link to="/">ยกเลิกการจอง</Link>
-            </div>
           </div>
         </div>
       </div>
