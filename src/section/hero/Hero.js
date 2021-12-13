@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="hero">
       <div className="container">
         <h1>จองรถล่วงหน้าสำหรับทริปของคุณ</h1>
-        <h5>ราคาถูกสะดวกปลอดภัย</h5>
+        <h5>ราคาถูก   สะดวก   ปลอดภัย</h5>
         <PriceChecker className="price-checker" />
       </div>
     </section>
