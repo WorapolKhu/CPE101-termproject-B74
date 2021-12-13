@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Res2.css";
 import underline from "../../../img/icon/underline.svg";
+import MainNavigation from "../../../Components/navbar/navbar";
+
 const Res2 = () => {
   const [input, setInput] = useState({
     //state that use in input form
@@ -25,6 +27,8 @@ const Res2 = () => {
   };
 
   return (
+    <>
+    <MainNavigation />
     <main action="/reversation" className="res2">
       <img className="statusIcon" src="/res2.svg" alt="res2-icon" />
       <div className="container">
@@ -91,6 +95,7 @@ const Res2 = () => {
         </form>
       </div>
     </main>
+    </>
   );
 };
 export default Res2;

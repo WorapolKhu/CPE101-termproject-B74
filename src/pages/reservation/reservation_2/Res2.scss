@@ -62,7 +62,7 @@
 
       textarea {
         font-family: sukhumvit;
-        margin: 1.9vh 0 0 1.9vh;
+        margin-top: 0.8rem;
         display: block;
         height: 6rem;
         width: 30rem;
@@ -89,7 +89,7 @@
           box-shadow: 0px 0px 10px 0px #707070;
         }
         .back-cta {
-          width: 4.7rem;
+          width: 5.3rem;
           color: white;
           background-color: #5895f1;
         }
@@ -98,7 +98,7 @@
           transition: all ease 0.7S;
         }
         .confirm-cta {
-          width: 8rem;
+          width: 8.5rem;
           margin-left: 2.5rem;
           color: white;
           background-color: #707070;
@@ -112,47 +112,3 @@
     }
   }
 }
-
-// .numberpass {
-//         display: inline-block;
-//         padding: 0.5rem 0.4rem 0.5rem 0.4rem;
-//         width: 4em;
-//         border: 0px;
-//         color: #1b1b1b;
-//         border: 1.25px solid #6e6e6e;
-//         font-size: 0.8rem;
-//         border-radius: 7px;
-//         transform: all 0.2s ease-in-out;
-//         &:hover {
-//           background-color: rgb(250, 253, 255);
-//         }
-//         &:active {
-//           background-color: rgb(204, 204, 204);
-//           border-bottom: 1.25px solid #186edf;
-//           outline: none;
-//         }
-//       }
-//  .subtext {
-//         display: inline-block;
-//         font-family: sukhumvit;
-//         font-size: 1rem;
-//         color: #505050;
-//         font-weight: 300;
-//         vertical-align: bottom;
-//       }
-
-// &:hover {
-//   background-color: rgb(250, 253, 255);
-// }
-// &:focus {
-//   background-color: rgb(243, 243, 243);
-//   border: 1.5px solid #186edf;
-//   border-radius: 5px;
-// }
-
-// &:hover {
-//   background-color: #2e3592;
-// }
-// &:active {
-//   background-color: #172d69;
-// }

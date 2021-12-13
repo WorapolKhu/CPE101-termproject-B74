@@ -4,6 +4,7 @@ import "./Res1.css";
 import DatePicker, { CalendarContainer } from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import underline from "../../../img/icon/underline.svg";
+import MainNavigation from "../../../Components/navbar/navbar";
 
 const Res1 = () => {
   const [startDate, setStartDate] = useState(new Date());
@@ -17,6 +18,8 @@ const Res1 = () => {
   };
 
   return (
+    <>
+    <MainNavigation />
     <div className="res1">
       <img className="statusIcon" src="/res1.svg" alt="res1-icon" />
       <div className="container">
@@ -264,6 +267,7 @@ const Res1 = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 

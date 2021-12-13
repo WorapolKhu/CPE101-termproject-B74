@@ -72,7 +72,7 @@
 
 .res2 .container form textarea {
   font-family: sukhumvit;
-  margin: 1.9vh 0 0 1.9vh;
+  margin-top: 0.8rem;
   display: block;
   height: 6rem;
   width: 30rem;
@@ -113,7 +113,7 @@
 }
 
 .res2 .container form .btn-container .back-cta {
-  width: 4.7rem;
+  width: 5.3rem;
   color: white;
   background-color: #5895f1;
 }
@@ -125,7 +125,7 @@
 }
 
 .res2 .container form .btn-container .confirm-cta {
-  width: 8rem;
+  width: 8.5rem;
   margin-left: 2.5rem;
   color: white;
   background-color: #707070;

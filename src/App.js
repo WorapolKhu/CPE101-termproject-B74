@@ -5,7 +5,6 @@ import Home from "./pages/home/Home";
 import Res1 from "./pages/reservation/reservation_1/Res1";
 import Res2 from "./pages/reservation/reservation_2/Res2";
 import Res3 from "./pages/reservation/reservation_3/Res3";
-import MainNavigation from "./Components/navbar/navbar";
 import History from "./pages/History/historypage/historypage";
 import Ticket from "./pages/History/pagereserve/pagereserve";
 
@@ -25,7 +24,6 @@ function App() {
   initializeApp(config);
   return (
     <div>
-      <MainNavigation />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/reservation" element={<Res1 />} />

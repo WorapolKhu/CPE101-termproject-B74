@@ -5,9 +5,12 @@ import underline from "../../../img/icon/underline.svg";
 import phone from "../../../img/icon/phone-gray.svg";
 import line from "../../../img/icon/line-gray.svg";
 import userImage from "../../../img/icon/people.svg";
+import MainNavigation from "../../../Components/navbar/navbar";
 
 const Res3 = () => {
   return (
+    <>
+    <MainNavigation />
     <div className="res3">
        <img className="statusIcon" src="/res3.svg" alt="res3-icon" />
       <div className="container">
@@ -89,6 +92,7 @@ const Res3 = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
