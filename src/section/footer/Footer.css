@@ -1,7 +1,9 @@
 .footer {
   background-color: #183658;
   color: white;
-  padding: 5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 9rem;
 }
 
 .footer ul {
@@ -22,7 +24,6 @@
 .footer .container .logo {
   font-size: 3em;
   font-weight: bolder;
-  margin: auto;
 }
 
 .footer .container li {
