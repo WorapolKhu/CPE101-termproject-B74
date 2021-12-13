@@ -4,10 +4,26 @@
   src: url(../../../font/SukhumvitSet-Medium.ttf);
 }
 
+.res2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.res2 .statusIcon {
+  width: 28rem;
+  margin: auto;
+  margin-top: 0.8rem;
+}
+
 .res2 .container {
-  width: 45rem;
+  width: 42rem;
   height: 28rem;
-  margin: 5rem auto;
+  margin: 2.5rem auto;
   padding: 1.5rem;
   border: 1px solid gray;
   -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -66,36 +82,59 @@
 }
 
 .res2 .container form .btn-container {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  bottom: 2rem;
+  margin-top: 1.2rem;
 }
 
 .res2 .container form .btn-container .btn {
-  margin-top: 2rem;
-  font-size: 0.8rem;
-  border-radius: 4em;
-  color: white;
-  padding: 0.5em 1.5em;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  border-radius: 1.5rem;
+  padding-top: 2px;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
+  -webkit-box-shadow: 0px 0px 10px 0px #707070;
+          box-shadow: 0px 0px 10px 0px #707070;
 }
 
 .res2 .container form .btn-container .back-cta {
-  margin-left: 5rem;
-  background-color: #fe4600;
-  -webkit-box-shadow: 0.1px 5px 15px 0px #ff936a;
-          box-shadow: 0.1px 5px 15px 0px #ff936a;
+  width: 4.7rem;
+  color: white;
+  background-color: #5895f1;
+}
+
+.res2 .container form .btn-container .back-cta:hover {
+  background-color: #4fd601;
+  -webkit-transition: all ease 0.7S;
+  transition: all ease 0.7S;
 }
 
 .res2 .container form .btn-container .confirm-cta {
-  background-color: #4fd601;
-  -webkit-box-shadow: 0.1px 5px 15px 0px #7cfa34;
-          box-shadow: 0.1px 5px 15px 0px #7cfa34;
+  width: 8rem;
+  margin-left: 2.5rem;
+  color: white;
+  background-color: #707070;
+}
+
+.res2 .container form .btn-container .confirm-cta:hover {
+  margin-left: 2.5rem;
+  background-color: #ff4b04;
+  -webkit-transition: all ease 0.7S;
+  transition: all ease 0.7S;
 }
 /*# sourceMappingURL=Res2.css.map */

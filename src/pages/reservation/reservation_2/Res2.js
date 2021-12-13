@@ -26,6 +26,7 @@ const Res2 = () => {
 
   return (
     <main action="/reversation" className="res2">
+      <img className="statusIcon" src="/res2.svg" alt="res2-icon" />
       <div className="container">
         <h1>Personal Info</h1>
         <img src={underline} alt="underline" />
@@ -80,10 +81,10 @@ const Res2 = () => {
             />
           </label>
           <div className="btn-container">
-            <Link className="confirm-cta btn" to="/reservation">
+            <Link className="back-cta btn" to="/reservation">
               กลับ
             </Link>
-            <Link className="back-cta btn" to="/reservation-confirm">
+            <Link className="confirm-cta btn" to="/reservation-confirm">
               ตรวจสอบข้อมูล
             </Link>
           </div>
