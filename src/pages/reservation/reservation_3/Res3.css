@@ -1,178 +1,160 @@
-.res3 .Confirmation {
-  width: 45rem;
-  margin: 5rem auto;
+.res3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.res3 .statusIcon {
+  width: 28rem;
+  margin: auto;
+  margin-top: 0.8rem;
+}
+
+.res3 .container {
+  width: 42rem;
+  height: 28rem;
+  margin: 2.5rem auto;
   padding: 1.5rem;
-  height: 420px;
   border: 1px solid gray;
   -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border-radius: 7px;
+  position: relative;
 }
 
-.res3 .image {
-  width: 7rem;
-  position: absolute;
-  left: 55%;
-  height: 10rem;
-  border: 1px solid gray;
+
+.res3 .container h1 {
+  font-size: 2rem;
+  font-family: "Epilogue";
+  color: #565656;
 }
 
-.res3 .first {
-  font-family: "sukhumvit";
+.res3 .container h3 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.res3 .container .list {
+  display: block;
+}
+
+.res3 .container .list ul {
+  margin-bottom: 0.2rem;
   font-size: 12px;
-  -webkit-columns: 2;
-          columns: 2;
   list-style: none;
-  width: 300px;
+  width: 19rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.res3 .first c {
-  font-family: "sukhumvit";
+.res3 .container .list ul .reciept-data {
+  margin-left: 2rem;
+  padding: 0.1em 1rem;
+  text-indent: 1em;
   font-size: 11px;
   border-radius: 10px;
-  background-color: #c0bebe;
-  width: 100px;
-  height: 10px;
+  background-color: #ebebeb;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-.res3 .second {
-  font-family: "sukhumvit";
-  font-size: 12px;
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
-}
-
-.res3 .second c {
-  font-family: "sukhumvit";
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
-}
-
-.res3 .third {
-  font-family: "sukhumvit";
-  font-size: 12px;
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
-}
-
-.res3 .third c {
-  font-family: "sukhumvit";
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
-}
-
-.res3 .fouth {
-  font-family: "sukhumvit";
-  font-size: 12px;
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
-}
-
-.res3 .fouth c {
-  font-family: "sukhumvit";
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
-}
-
-.res3 .fifth {
-  font-family: "sukhumvit";
-  font-size: 12px;
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
-}
-
-.res3 .fifth c {
-  font-family: "sukhumvit";
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
-}
-
-.res3 .contect {
+.res3 .container .driver-info {
   color: gray;
   font-size: 11px;
-  font-family: "sukhumvit";
+  vertical-align: center;
+  margin: 1.5rem auto;
 }
 
-.res3 .contect .drivercontect {
+.res3 .container .driver-info .userImage {
+  width: 7rem;
+  height: 10rem;
+  padding: white;
+  right: 5rem;
+  border: solid lightgray;
+}
+
+.res3 .container .driver-info .driver-contact-container {
+  margin: 0rem auto;
+  list-style: none;
+  vertical-align: center;
   border: 1px solid gray;
-  list-style: none;
-  width: 100px;
   border-radius: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0.3em 1em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.res3 .Info {
-  font-family: "sukhumvit";
-  font-size: 12px;
+.res3 .container .driver-info .driver-contact-container li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-.res3 .Info .Name {
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
+.res3 .container .driver-info .driver-contact-container li img {
+  width: 1em;
+  margin-right: 0.25rem;
 }
 
-.res3 .Info .Name c {
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
+.res3 .container .driver-info .driver-contact-container .line-id {
+  margin-left: 1rem;
 }
 
-.res3 .Info .Lastname {
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
+.res3 .container .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.res3 .Info .Lastname c {
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
+.res3 .container .btn-container .btn {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  width: 5.3rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2px;
+  -webkit-box-shadow: 0px 0px 10px 0px #707070;
+          box-shadow: 0px 0px 10px 0px #707070;
 }
 
-.res3 .Info .Number {
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
+.res3 .container .btn-container .back-cta {
+  color: white;
+  background-color: #5895f1;
 }
 
-.res3 .Info .Number c {
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
-}
-
-.res3 .Info .Passenger {
-  -webkit-columns: 2;
-          columns: 2;
-  list-style: none;
-  width: 300px;
-}
-
-.res3 .Info .Passenger c {
-  font-size: 11px;
-  border-radius: 10px;
-  background-color: #c0bebe;
-}
-
-.res3 .button {
-  -webkit-columns: 2;
-          columns: 2;
-  margin-top: 1.5rem;
+.res3 .container .btn-container .back-cta:hover {
+  background-color: #4fd601;
+  -webkit-transition: all ease 0.7S;
+  transition: all ease 0.7S;
 }
 
 .res3 .button .edit .button {
@@ -196,7 +178,7 @@
   -webkit-box-shadow: 1.5px 1.5px 1.5px #7cfa34;
           box-shadow: 1.5px 1.5px 1.5px #7cfa34;
   color: white;
-  margin: 0.2rem;
+  background-color: #707070;
 }
 .res3 .button .btn {
   text-decoration: none;
@@ -207,7 +189,6 @@
   font-size: 11px;
   padding-left: 5px;
   border-radius: 10px;
-  color:#ffffff;
-  background-color: #8a8a8a;
+  color:#2c2c2c;
 }
 /*# sourceMappingURL=Res3.css.map */

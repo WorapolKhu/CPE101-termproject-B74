@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import { getDatabase, ref, onValue , query} from "firebase/database";
 import { uuid } from "uuidv4";
 import "./Res3.css";
+import underline from "../../../img/icon/underline.svg";
+import phone from "../../../img/icon/phone-gray.svg";
+import line from "../../../img/icon/line-gray.svg";
+import userImage from "../../../img/icon/people.svg";
+import MainNavigation from "../../../Components/navbar/navbar";
 
 function Text(props) {
   return <p id="plain">{props.text}</p>;
@@ -43,72 +48,89 @@ const Res3 = () => {
   });
   console.log(data);
   return (
+    <>
+    <MainNavigation />
     <div className="res3">
-      <div className="Confirmation">
+       <img className="statusIcon" src="/res3.svg" alt="res3-icon" />
+      <div className="container">
         <h1>Confirmation</h1>
-        <div className="image">test</div>
-        <div className="first">
-          <li>จุดเริ่มต้น</li>
-          <Text text={data.start} />
-        </div>
-        <div className="second">
-          <li>จุดหมายปลายทาง</li>
-          <Text text={data.end} />
-        </div>
-        <div className="third">
-          <li>วันที่</li>
+        <img src={underline} alt="underline" />
+        
+        <div className="grid-container">
+          <ul className="trip-info list">
           <li>
-          <Text text={data.date} />
-          </li>
-        </div>
-        <div className="fouth">
-          <li>พาหนะ</li>
-          <li>
-          <Text text={data.car} />
-          </li>
-        </div>
-        <div className="fifth">
-          <li>คนขับ</li>
-          <li>
-          <Text text={data.driver} />
-          </li>
-        </div>
-        <div className="contect">
-          <p>- ช่องทางการติดต่อคนขับ -</p>
-          <div className="drivercontect">
-            <li>081-xxx-xxxx</li>
-            <li>line id</li>
+              <h3>- ข้อมูลทริป -</h3>
+            </li>
+            <ul>
+              <li className="text">จุดเริ่มต้น</li>
+              <li className="reciept-data"><Text text={data.start} /></li>
+            </ul>
+            <ul>
+              <li>จุดหมายปลายทาง</li>
+              <li className="reciept-data"><Text text={data.end} /></li>
+            </ul>
+            <ul>
+              <li>วันที่</li>
+              <li className="reciept-data"><Text text={data.date} /></li>
+            </ul>
+            <ul>
+              <li>พาหนะ</li>
+              <li className="reciept-data"><Text text={data.car} /></li>
+            </ul>
+            <ul>
+              <li>คนขับ</li>
+              <li className="reciept-data"><Text text={data.driver} /></li>
+            </ul>
+          </ul>
+          <ul className="customer-info list">
+            <h3>- ข้อมูลส่วนตัว -</h3>
+            <ul className="name">
+              <li>ชื่อ</li>
+              <li className="reciept-data"><Text text={data.name} /></li>
+            </ul>
+            <ul className="name">
+              <li>นามสกุล</li>
+              <li className="reciept-data"><Text text={data.lastname} /></li>
+            </ul>
+
+            <ul>
+              <li>เบอร์โทรศัพท์</li>
+              <li className="reciept-data"><Text text={data.phone} /></li>
+            </ul>
+            <ul>
+              <li>จำนวนผู้โดยสาร</li>
+              <li className="reciept-data"><Text text={data.passenger} /></li>
+            </ul>
+          </ul>
+
+          <div className="driver-info">
+            <div className="img-container">
+              <img className="userImage" src={userImage} alt="UserImage" />
+            </div>
+            <p>- ช่องทางการติดต่อคนขับ -</p>
+            <ul className="driver-contact-container">
+              <li>
+                <img src={phone} alt="phone" />
+                <p>081-xxx-xxxx</p>
+              </li>
+              <li className="line-id">
+                <img src={line} alt="line" />
+                <p>line id</p>
+              </li>
+            </ul>
+          </div>
+          <div className="btn-container">
+          <Link to="/reservation-info" className="back-cta btn">
+            แก้ไข
+          </Link>
+          <Link to="/" className="confirm-cta btn">
+            ยืนยัน
+          </Link>
           </div>
         </div>
-        <div className="Info">
-          <p>- ข้อมูลส่วนตัว -</p>
-          <div className="Name">
-            <li>ชื่อ</li>
-            <Text text={data.name} />
-          </div>
-          <div className="Lastname">
-            <li>นามสกุล</li>
-            <Text text={data.lastname} />
-          </div>
-          <div className="Number">
-            <li>เบอร์โทรศัพท์</li>
-            <Text text={data.phone} />
-          </div>
-          <div className="Passenger">
-            <li>จำนวนผู้โดยสาร</li>
-            <Text text={data.passenger} />
-          </div>
-        </div>
-        <div className="button">
-          <div className="edit">
-            <button type="button" className="button"><Link className="btn" to="/">แก้ไข</Link></button>
-          </div>
-          <div className="okay">
-          <button type="button" className="button"><Link className="btn" to="/">ยืนยัน</Link></button>
-          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
