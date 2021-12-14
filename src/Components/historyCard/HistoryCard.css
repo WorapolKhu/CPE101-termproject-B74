@@ -1,0 +1,73 @@
+.historycard .box {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 2rem;
+  background-color: #aacbf4;
+  border-radius: 2rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.historycard .box .driverImage img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 5rem;
+  -webkit-clip-path: circle(2.5rem);
+          clip-path: circle(2.5rem);
+  margin: auto;
+}
+
+.historycard .box h3 {
+  font-size: 0.8rem;
+  margin-right: 1em;
+}
+
+.historycard .box p {
+  font-size: 0.8rem;
+}
+
+.historycard .box .detail {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.historycard .box .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.historycard .box .review-cta {
+  position: absolute;
+  bottom: 1rem;
+  right: 1em;
+}
+
+.historycard .box .review-cta a {
+  font-size: 0.8rem;
+  padding: 1em 2em;
+  background-color: white;
+  border-radius: 1.2em;
+  color: #464e78;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.historycard .box .review-cta a img {
+  vertical-align: middle;
+  width: 1em;
+  margin-right: 1em;
+}
+/*# sourceMappingURL=HistoryCard.css.map */

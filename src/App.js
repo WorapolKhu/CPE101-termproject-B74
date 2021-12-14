@@ -5,9 +5,8 @@ import Home from "./pages/home/Home";
 import Res1 from "./pages/reservation/reservation_1/Res1";
 import Res2 from "./pages/reservation/reservation_2/Res2";
 import Res3 from "./pages/reservation/reservation_3/Res3";
-import Navbar from "./Components/navbar/navbar";
-import History from "./pages/History/historypage";
-import Ticket from "./pages/History/pagereserve";
+import History from "./pages/History/historypage/historypage";
+import Ticket from "./pages/History/pagereserve/pagereserve";
 
 function App() {
   var config = {
@@ -18,13 +17,13 @@ function App() {
     messagingSenderId: "1078563143609",
     appId: "1:1078563143609:web:dbd910bf0f2d4620838068",
     measurementId: "${config.measurementId}",
-    databaseURL: "https://b74-reversation-car-default-rtdb.asia-southeast1.firebasedatabase.app/",
-    storageBucket: "bucket.appspot.com"
+    databaseURL:
+      "https://b74-reversation-car-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    storageBucket: "bucket.appspot.com",
   };
   initializeApp(config);
   return (
     <div>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/reservation" element={<Res1 />} />

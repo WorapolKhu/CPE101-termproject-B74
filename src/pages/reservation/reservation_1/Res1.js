@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Select from 'react-select';
-import { getDatabase, ref, push , set } from "firebase/database";
+import { getDatabase, ref , set } from "firebase/database";
 import { uuid } from "uuidv4";
 import "./Res1.css";
-import DatePicker from "react-datepicker";
+import DatePicker, { CalendarContainer } from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-// import Button from "@restart/ui/esm/Button";
+import underline from "../../../img/icon/underline.svg";
+import MainNavigation from "../../../Components/navbar/navbar";
 
 const Res1 = () => {
   var UserId = localStorage.getItem("UserId");
@@ -35,8 +36,8 @@ const Res1 = () => {
         start: payload1.start.value,
         end: payload1.end.value,
         date: Date.parse(startDate),
-       car : payload1.car.value,
-       driver : payload1.driver.value,
+        car : payload1.car.value,
+        driver : payload1.driver.value,
      })
       .then(() => {console.log("data saved success");});
 
@@ -135,39 +136,46 @@ const Res1 = () => {
       {value: 'อู๋', label: 'อู๋'}
     ];
   return (
+    <>
+    <MainNavigation />
     <div className="res1">
-      <div className="Information">
-        <h1>Detail</h1>
-        <div className="Destination">
-          <li>จุดเริ่มต้น</li>
+    <img className="statusIcon" src="/res1.svg" alt="res1-icon" />
+    <div className="container">
+      <h1>Trip Detail</h1>
+      <img src={underline} alt="underline" id="imgps"/>
+      <div className="inline">
+        <label className="start">
+          จุดเริ่มต้น
           <Select id="select" value={payload1.start} onChange={optionChange('start')} placeholder="เลือกจุดเริ่มต้น.." options={option} isSearchable maxMenuHeight={300}/>
-        </div>
-          <div className="Destination2">
-          <li>จุดหมายปลายทาง</li>
+        </label>
+          <label className="end">
+          จุดหมายปลายทาง
           <Select id="select" value={payload1.end} onChange={optionChange('end')} placeholder="เลือกจุดปลายทาง.." options={option} isSearchable maxMenuHeight={300} />
-          </div>
-        <div className="Date">
-          <li>วันที่</li>
-          <calendar>
+          </label>
+        </div>
+        <label className="Date">
+          วันที่
+          <CalendarContainer>
             <DatePicker
               selected={startDate}
               onChange={(date) => setStartDate(date)}
             />
-          </calendar>
-        </div>
-        <div className="Car">
-          <li>รถโดยสาร</li>
+          </CalendarContainer>
+        </label>
+        <label className="Car">
+          รถโดยสาร
           <Select id="select" value={payload1.car} onChange={optionChange('car')} placeholder="เลือกรถโดยสาร.." options={cars} />
-        </div>
-        <div className="Driver">
-          <li>คนขับ</li>
+        </label>
+        <label className="Driver">
+          คนขับ
           <Select id="select" value={payload1.driver} onChange={optionChange('driver')} placeholder="เลือกคนขับ.." options={drivers} />
-        </div>
-        <div className="Next">
-          <button type="button" id="button" onClick={optionSubmit}><Link to="/reservation-info" className="btn">ถัดไป</Link></button>
+        </label>
+        <div className="btn-container">
+          <button type="button" className="confirm-cta btn" onClick={optionSubmit}><Link to="/reservation-info" className="btnpri">ถัดไป</Link></button>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

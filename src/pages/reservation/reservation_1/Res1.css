@@ -1,139 +1,124 @@
-.res1 .Information {
-  width: 80%;
-  margin: 5rem auto;
+.res1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.res1 .statusIcon {
+  width: 28rem;
+  margin: auto;
+  margin-top: 0.8rem;
+}
+
+.res1 .container {
+  width: 42rem;
+  height: 28rem;
+  margin: 2.5rem auto;
   padding: 1.5rem;
-  height: 420px;
   border: 1px solid gray;
   -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border-radius: 7px;
+  position: relative;
 }
 
-.res1 .Information h1 {
-  font-size: 30px;
+.res1 .container #select {
+  font-family: "sukhumvit";
+  border: none;
+  color: gray;
+  font-size: 12px;
+  width: 15em;
+  display: block;
+  margin-top: 0.4rem;
+}
+
+.res1 .container label {
+  font-family: "sukhumvit";
+  font-size: 12px;
+  display: block;
+  margin-top: 1rem;
+}
+
+.res1 .container h1 {
+  font-size: 2rem;
   font-family: "Epilogue";
+  color: #565656;
 }
-
-.res1 .Destination {
+.res1 .container #imgps {
   position: absolute;
+  margin-top: 0rem;
 }
-.res1 .Destination2 {
-  position: absolute;
-  margin-left: 37vw;
-}
-.res1 .Destination2 #select {
-  font-family: "sukhumvit";
-  border: none;
-  color: gray;
-  font-size: 11px;
-  width: 200px;
-  min-height: 6vh;
-}
-.res1 .Destination #select {
-  font-family: "sukhumvit";
-  border: none;
-  color: gray;
-  font-size: 11px;
-  width: 200px;
-  min-height: 6vh;
-}
-
-.res1 .DateandCar {
-  -webkit-column-count: 2;
-          column-count: 2;
+.res1 .container .inline {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
 }
 
-.res1 .Car #select {
-  font-family: "sukhumvit";
-  color: black;
+.res1 .container .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2.5rem;
 }
 
-.res1 .Car #select {
-  font-family: "sukhumvit";
-  border: none;
-  color: gray;
-  font-size: 11px;
-  width: 200px;
-}
-
-.res1 .Driver #select {
-  font-family: "sukhumvit";
-  border: none;
-  color: gray;
-  font-size: 11px;
-  width: 200px;
-}
-
-.res1 .Date li {
-  list-style: none;
-  font-family: "sukhumvit";
-  margin-top: 7vh;
-  font-size: 12px;
-}
-
-.res1 .Car li {
-  list-style: none;
-  font-family: "sukhumvit";
-  margin-top: 20px;
-  font-size: 12px;
-}
-
-.res1 .Driver li {
-  list-style: none;
-  font-family: "sukhumvit";
-  margin-top: 20px;
-  font-size: 12px;
-}
-
-.res1 .Destination li {
-  list-style: none;
-  font-family: "sukhumvit";
-  font-size: 12px;
-}
-
-.res1 .Destination2 li {
-  list-style: none;
-  font-family: "sukhumvit";
-  font-size: 12px;
-}
-
-.res1 c {
-  color: gray;
-  width: 20%;
-  font-family: "sukhumvit";
-}
-
-.res1 .Destination ul {
-  list-style: none;
-  background-color: wheat;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  color: violet;
-}
-
-.res1 .Next #button {
-  position: relative;
+.res1 .container .btn-container .btn {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-radius: 1.5rem;
   text-decoration: none;
-  top: 50px;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #fe4600;
-  border: #fe4600;
-  -webkit-box-shadow: 1.5px 1.5px 1.5px #ff936a;
-          box-shadow: 1.5px 1.5px 1.5px #ff936a;
+  width: 5.3rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2px;
+  -webkit-box-shadow: 0px 0px 10px 0px #707070;
+          box-shadow: 0px 0px 10px 0px #707070;
+}
+
+.res1 .container .btn-container .back-cta {
   color: white;
-  font-family: "sukhumvit";
-  width: 5rem;
-  text-decoration: none;
-}
-.res1 .Next .btn {
-  text-decoration: none;
-  color: #ffffff;
+  background-color: #5895f1;
 }
 
-/*# sourceMappingURL=Res1.css.map */
+.res1 .container .btn-container .back-cta:hover {
+  background-color: #4fd601;
+  -webkit-transition: all ease 0.7S;
+  transition: all ease 0.7S;
+}
+
+.res1 .container .btn-container .confirm-cta {
+  margin-top: -1rem;
+  margin-left: 2.5rem;
+  color: white;
+  background-color: #707070;
+}
+.res1 .container .btn-container .btnpri {
+  text-decoration: none;
+  color: white;
+}
+.res1 .container .btn-container .confirm-cta:hover {
+  margin-left: 2.5rem;
+  background-color: #ff4b04;
+  -webkit-transition: all ease 0.7S;
+  transition: all ease 0.7S;
+}

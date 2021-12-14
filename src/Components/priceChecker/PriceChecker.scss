@@ -1,7 +1,10 @@
 .price-checker {
   .container {
     width: 60%;
-    padding: 2rem 5rem;
+    padding-top: 2.2rem;
+    padding-bottom: 0.8rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     background-color: white;
     border: 5em;
     border-radius: 15px;
@@ -26,38 +29,53 @@
             background-color: #f3f3f3;
             border: 1px solid gray;
             border-radius: 1em;
-            height: 1.5rem;
+            height: 1.7rem;
             width: 80%;
+            padding-left: 15px;
+            font-size: 0.9rem;
           }
         }
       }
       .confirm-cta {
         margin: 1rem auto;
         width: 100%;
-        position: relative;
-        display: inline-flex;
+        display: flex;
         justify-content: center;
-        row-gap: 2rem;
+        font-size: 1rem;
+        margin-top: 2rem;
         .btn-primary {
           text-decoration: none;
           margin-right: 2rem;
           box-sizing: border-box;
           color: #fff;
           background-color: #197266;
-          border: none;
-          padding: 0.2rem 2rem;
-          border-radius: 1rem;
+          width: 5.8rem;
+          height: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 1.5rem;
+          box-shadow: 0px 0px 5px 0px #707070;
         }
         .btn-secondary {
           text-decoration: none;
-
-          padding: 0.2rem 2rem;
-          border-radius: 1rem;
+          border-radius: 1.5rem;
+          width: 6.5rem;
+          height: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           box-sizing: border-box;
-          color: #197266;
-          background-color: #fff;
-          border: 3 px #197266 solid;
+          color: white;
+          //color: #197266;
+          background-color: #1baa97;
+          //border: 3px #197266 solid;
           outline: none;
+          box-shadow: 0px 0px 5px 0px #707070;
+        }
+        .btn-primary:hover, .btn-secondary:hover {
+          background-color: #707070;
+          transition: all ease 0.7S;
         }
       }
     }

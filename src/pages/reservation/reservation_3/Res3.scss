@@ -1,187 +1,143 @@
 .res3 {
-  .Confirmation {
-    width: 45rem;
-    margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  
+  .statusIcon {
+    width: 28rem;
+    margin: auto;
+    margin-top: 0.8rem;
+  }
+  .container {
+    // container-------------------------------------
+    width: 42rem;
+    height: 28rem;
+    margin: 2.5rem auto;
     padding: 1.5rem;
-    height: 420px;
     border: 1px solid rgb(128, 128, 128);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-  }
+    border-radius: 7px;
+    position: relative;
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "tripInfo tripInfo tripInfo driverInfo driverInfo"
+        "userInfo userInfo userInfo driverInfo driverInfo";
+    }
+    .trip-info {
+      grid-area: tripInfo;
+    }
+    .customer-info {
+      grid-area: userInfo;
+    }
+    .driver-info {
+      grid-area: driverInfo;
+    }
 
-  .image {
-    width: 7rem;
-    position: absolute;
-    left: 55%;
-    height: 10rem;
-    border: 1px solid rgb(128, 128, 128);
-  }
+    // general-------------------------------------
+    h1 {
+      font-size: 2rem;
+      font-family: "Epilogue";
+      color: #565656;
+    }
+    h3 {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
 
-  .first {
-    font-family: "sukhumvit";
-    font-size: 12px;
-    columns: 2;
-    list-style: none;
-    width: 300px;
-  }
+    // Other-----------------------------------------
+    .list {
+      display: block;
 
-  .first c {
-    font-family: "sukhumvit";
-    font-size: 11px;
-    border-radius: 10px;
-    background-color: rgb(192, 190, 190);
-    width: 100px;
-    height: 10px;
-  }
+      ul {
+        margin-bottom: 0.2rem;
+        font-size: 12px;
+        list-style: none;
+        width: 19rem;
+        display: flex;
 
-  .second {
-    font-family: "sukhumvit";
-    font-size: 12px;
-    columns: 2;
-    list-style: none;
-    width: 300px;
-  }
+        .reciept-data {
+          margin-left: 2rem;
+          padding: 0.1em 1rem;
+          text-indent: 1em;
+          font-size: 11px;
+          border-radius: 10px;
+          background-color: #ebebeb;
+          align-self: stretch;
+          flex-grow: 1;
+        }
+      }
+    }
 
-  .second c {
-    font-family: "sukhumvit";
-    font-size: 11px;
-    border-radius: 10px;
-    background-color: rgb(192, 190, 190);
-  }
+    .driver-info {
+      color: gray;
+      font-size: 11px;
+      vertical-align: center;
+      margin: 1.5rem auto;
+      .userImage {
+        width: 7rem;
+        height: 10rem;
+        padding: white;
+        right: 5rem;
+        border: solid lightgray;
+      }
+      .driver-contact-container {
+        margin: 0rem auto;
+        list-style: none;
+        vertical-align: center;
+        border: 1px solid gray;
+        border-radius: 10px;
+        display: inline-flex;
+        padding: 0.3em 1em;
+        flex-direction: column;
+        flex-wrap: wrap;
+        li {
+          display: inline-flex;
+          img {
+            width: 1em;
+            margin-right: 0.25rem;
+          }
+        }
+        .line-id {
+          margin-left: 1rem;
+        }
+      }
+    }
 
-  .third {
-    font-family: "sukhumvit";
-    font-size: 12px;
-    columns: 2;
-    list-style: none;
-    width: 300px;
-  }
-
-  .third c {
-    font-family: "sukhumvit";
-    font-size: 11px;
-    border-radius: 10px;
-    background-color: rgb(192, 190, 190);
-  }
-
-  .fouth {
-    font-family: "sukhumvit";
-    font-size: 12px;
-    columns: 2;
-    list-style: none;
-    width: 300px;
-  }
-
-  .fouth c {
-    font-family: "sukhumvit";
-    font-size: 11px;
-    border-radius: 10px;
-    background-color: rgb(192, 190, 190);
-  }
-
-  .fifth {
-    font-family: "sukhumvit";
-    font-size: 12px;
-    columns: 2;
-    list-style: none;
-    width: 300px;
-  }
-
-  .fifth c {
-    font-family: "sukhumvit";
-    font-size: 11px;
-    border-radius: 10px;
-    background-color: rgb(192, 190, 190);
-  }
-
-  .contect {
-    color: gray;
-    font-size: 11px;
-    font-family: "sukhumvit";
-  }
-
-  .contect .drivercontect {
-    border: 1px solid gray;
-    list-style: none;
-    width: 100px;
-    border-radius: 10px;
-  }
-
-  .Info {
-    font-family: "sukhumvit";
-    font-size: 12px;
-  }
-
-  .Info .Name {
-    columns: 2;
-    list-style: none;
-    width: 300px;
-  }
-
-  .Info .Name c {
-    font-size: 11px;
-    border-radius: 10px;
-    background-color: rgb(192, 190, 190);
-  }
-
-  .Info .Lastname {
-    columns: 2;
-    list-style: none;
-    width: 300px;
-  }
-
-  .Info .Lastname c {
-    font-size: 11px;
-    border-radius: 10px;
-    background-color: rgb(192, 190, 190);
-  }
-
-  .Info .Number {
-    columns: 2;
-    list-style: none;
-    width: 300px;
-  }
-
-  .Info .Number c {
-    font-size: 11px;
-    border-radius: 10px;
-    background-color: rgb(192, 190, 190);
-  }
-
-  .Info .Passenger {
-    columns: 2;
-    list-style: none;
-    width: 300px;
-  }
-
-  .Info .Passenger c {
-    font-size: 11px;
-    border-radius: 10px;
-    background-color: rgb(192, 190, 190);
-  }
-
-  .button {
-    columns: 2;
-    margin-top: 1.5rem;
-  }
-
-  .button .edit button {
-    font-family: "sukhumvit";
-    border-radius: 10px;
-    background-color: #4fd601;
-    border: #4fd601;
-    box-shadow: 1.5px 1.5px 1.5px #7cfa34;
-    color: white;
-    margin: 0.2rem;
-  }
-
-  .button .okay button {
-    font-family: "sukhumvit";
-    border-radius: 10px;
-    background-color: #fe4600;
-    border: #fe4600;
-    box-shadow: 1.5px 1.5px 1.5px #ff936a;
-    color: white;
-    margin: 0.2rem;
+    .btn-container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      .btn {
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        border-radius: 1.5rem;
+        text-decoration: none;
+        width: 5.3rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2px;
+        box-shadow: 0px 0px 10px 0px #707070;
+      }
+      .back-cta {
+        color: white;
+        background-color: #5895f1;
+      }
+      .back-cta:hover {
+        background-color:#4fd601;
+        transition: all ease 0.7S;
+      }
+      .confirm-cta {
+        margin-left: 2.5rem;
+        color: white;
+        background-color: #707070;
+      }
+      .confirm-cta:hover {
+        margin-left: 2.5rem;
+        background-color: #ff4b04;
+        transition: all ease 0.7S;
+      }
+    }
   }
 }

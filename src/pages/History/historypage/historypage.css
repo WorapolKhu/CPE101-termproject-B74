@@ -1,0 +1,76 @@
+#history {
+  background-image: url(../../../img//picture/history-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#history .container {
+  background-color: white;
+  width: 60%;
+  height: 32rem;
+  margin: 0 auto;
+  margin-top: 8rem;
+  padding: 3rem;
+  padding-top: 3rem;
+  border-radius: 3.5rem;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#history .container .history-card {
+  margin: auto;
+}
+
+#history .container .head-cta {
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateZ(-1px);
+          transform: translateZ(-1px);
+}
+
+#history .container .head-cta .reservation-cta {
+  padding: 1.5rem 4rem;
+  padding-bottom: 10rem;
+  background-color: #4074a4;
+  border-radius: 2rem 0rem 0rem 0rem;
+  z-index: 1;
+  font-size: large;
+}
+
+#history .container .head-cta .reservation-cta a {
+  font-weight: lighter;
+  text-decoration: none;
+  color: white;
+}
+
+#history .container .head-cta .history-cta {
+  font-weight: bold;
+  padding: 1.5rem 4rem;
+  padding-left: 5rem;
+  background-color: white;
+  border-radius: 2rem 2rem 0rem 0rem;
+  z-index: 2;
+  position: relative;
+  right: 2rem;
+  font-size: large;
+}
+/*# sourceMappingURL=historypage.css.map */
