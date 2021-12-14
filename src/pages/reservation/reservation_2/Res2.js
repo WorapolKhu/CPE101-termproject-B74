@@ -38,7 +38,7 @@ const Res2 = () => {
   .then(() => {
       console.log("data saved success");
   });
-  };gi
+  };
 
   return (
     <main action="/reversation" className="res2">
