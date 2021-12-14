@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { getDatabase, ref, push } from "firebase/database";
+import { getDatabase, ref, push , set } from "firebase/database";
 import { uuid } from "uuidv4";
 import { Link } from "react-router-dom";
 import "./navbar.scss";
 
 const Navbar = () => {
-    const UserId = localStorage.getItem("UserId");
+    //generate a unique id for the user
+    var UserId = localStorage.getItem("UserId");
     if (UserId === null) {
         localStorage.setItem("UserId", uuid());
         UserId = localStorage.getItem("UserId");
@@ -71,7 +72,9 @@ const Navbar = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         //database sent
-        push(ref(getDatabase(), 'users/' + UserId), {login})
+        set(push(ref(getDatabase(), 'users/' + UserId)), {
+            login
+        })
         .then(() => {
             console.log("data saved success");
         });
@@ -88,7 +91,13 @@ const Navbar = () => {
         event.preventDefault();
         console.log(signup);
         //database sent
-        push(ref(getDatabase(), 'users/' + UserId), {signup})
+        set(push(ref(getDatabase(), 'users/' + UserId + '/signup/')), {
+            name: signup.name,
+            email: signup.email,
+            password: signup.password,
+            phone: signup.phone,
+            id: UserId
+        })
         .then(() => {
             console.log("data saved success");
         });
@@ -98,7 +107,7 @@ const Navbar = () => {
         <>
             <div className={navbarClasses.join(" ")}>
                 <div className="logo">
-                    <li><Link to="/">B74</Link></li>
+                    <li><Link id="logo" to="/">B74</Link></li>
                 </div>
                 <nav className="navigation">
                     <li><p>&thinsp;<Link to="/">Home</Link>&thinsp;</p></li>

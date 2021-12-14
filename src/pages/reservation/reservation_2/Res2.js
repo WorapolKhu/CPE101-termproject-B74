@@ -1,8 +1,15 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { Link } from "react-router-dom";
+import { getDatabase, ref, push , set   } from "firebase/database";
+import { uuid } from "uuidv4";
 import "./Res2.css";
 
 const Res2 = () => {
+  var UserId = localStorage.getItem("UserId");
+  if (UserId === null) {
+    localStorage.setItem("UserId", uuid());
+    UserId = localStorage.getItem("UserId");
+  }
   const [input, setInput] = useState({
     //state that use in input form
     name: "",
@@ -19,10 +26,19 @@ const Res2 = () => {
   };
 
   const handleSubmit = (event) => {
-    //submit array state to database
     event.preventDefault();
-    console.log("submit value", input); //line connect database
-  };
+    console.log("submit value", input);
+    set(ref(getDatabase(), 'users/' + UserId + '/data/2/'), { //push data to firebase
+      name: input.name,
+      lastname: input.lastname,
+      phone: input.phone,
+      numpassenger: input.numpassenger,
+      texttodriver: input.texttodriver,
+  })
+  .then(() => {
+      console.log("data saved success");
+  });
+  };gi
 
   return (
     <main action="/reversation" className="res2">
@@ -31,7 +47,7 @@ const Res2 = () => {
           <p className="Headtext-warpper">Information</p>
         </div>
         <div className="box-content"></div>
-        <form onSubmit={handleSubmit}>
+        <form>
           <label>
             <p>ชื่อ&emsp;</p>
             <input
@@ -91,13 +107,24 @@ const Res2 = () => {
               required
             />
           </label>
+          <button type="button" className="button" onClick={handleSubmit}>
           <Link
-            type="submit"
+            
             className="btn btn-primary"
             to="/reservation-confirm"
           >
-            Submit
+            <p>ยืนยัน</p>
           </Link>
+          </button>
+          <button type="button" className="button2" onClick={handleSubmit}>
+          <Link
+            
+            className="btn btn-primary"
+            to="/reservation"
+          >
+            <p>ย้อนกลับ</p>
+          </Link>
+          </button>
         </form>
       </div>
     </main>

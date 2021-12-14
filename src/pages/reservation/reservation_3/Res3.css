@@ -175,9 +175,22 @@
   margin-top: 1.5rem;
 }
 
-.res3 .button .edit button {
+.res3 .button .edit .button {
   font-family: "sukhumvit";
   border-radius: 10px;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  background-color: #fe4600;
+  border: #fe4600;
+  -webkit-box-shadow: 1.5px 1.5px 1.5px #ff936a;
+          box-shadow: 1.5px 1.5px 1.5px #ff936a;
+  color: white;
+  margin: 0.2rem;
+}
+
+.res3 .button .okay .button {
+  font-family: "sukhumvit";
+  border-radius: 10px;
+  padding: 0.2rem 1rem 0.2rem 1rem;
   background-color: #4fd601;
   border: #4fd601;
   -webkit-box-shadow: 1.5px 1.5px 1.5px #7cfa34;
@@ -185,15 +198,16 @@
   color: white;
   margin: 0.2rem;
 }
-
-.res3 .button .okay button {
-  font-family: "sukhumvit";
-  border-radius: 10px;
-  background-color: #fe4600;
-  border: #fe4600;
-  -webkit-box-shadow: 1.5px 1.5px 1.5px #ff936a;
-          box-shadow: 1.5px 1.5px 1.5px #ff936a;
+.res3 .button .btn {
+  text-decoration: none;
   color: white;
-  margin: 0.2rem;
+}
+#plain {
+  font-family: "sukhumvit";
+  font-size: 11px;
+  padding-left: 5px;
+  border-radius: 10px;
+  color:#ffffff;
+  background-color: #8a8a8a;
 }
 /*# sourceMappingURL=Res3.css.map */

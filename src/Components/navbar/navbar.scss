@@ -42,13 +42,14 @@ body.active-LoginPopup {
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
-    a {
+    margin: .9rem 0rem 0rem 4.3rem;
+    #logo {
+        position: static;
         font-family: "Epilogue", sans-serif;
         text-decoration: none;
         color: #707070;
         font-size: 2.5rem;
         font-weight: bold;
-        margin: 1.4rem 0rem 0rem 4.3rem;
     }
 }
 .navigation {
