@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { getDatabase, ref, onValue , query} from "firebase/database";
+import { getDatabase, ref, onValue , query , set , push} from "firebase/database";
 import { uuid } from "uuidv4";
 import "./Res3.css";
 import underline from "../../../img/icon/underline.svg";
@@ -34,7 +34,7 @@ const Res3 = () => {
     const data1 = snapshot.val();
     data.start = data1.start;
     data.end = data1.end;
-    data.date = Intl.DateTimeFormat('en-US', {year: 'numeric', month: '2-digit',day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit'}).format(data1.date);
+    data.date = Intl.DateTimeFormat('en-US', {year: 'numeric', month: '2-digit',day: '2-digit'}).format(data1.date);
     data.driver = data1.driver;
     data.car = data1.car;
   });
@@ -46,7 +46,25 @@ const Res3 = () => {
     data.passenger = data2.numpassenger;
     data.drivertext = data2.texttodriver;
   });
-  console.log(data);
+  const handleConfirm = () => {
+    console.log("data", data);
+    set(push(ref(getDatabase(), 'users/' + UserId + '/transactions/')), { //push data to firebase
+      timebooked: Intl.DateTimeFormat('en-US', {year: 'numeric', month: '2-digit',day: '2-digit'}).format(new Date()),
+      name: data.name,
+      lastname: data.lastname,
+      phone: data.phone,
+      passenger: data.passenger,
+      driver: data.driver,
+      start: data.start,
+      end: data.end,
+      date: data.date,
+      drivertext: data.drivertext,
+      car: data.car
+    })
+    .then(() => {
+        console.log("data saved success");
+    });
+  };
   return (
     <>
     <MainNavigation />
@@ -123,9 +141,11 @@ const Res3 = () => {
           <Link to="/reservation-info" className="back-cta btn">
             แก้ไข
           </Link>
+          <button type="button" id="button" onClick={handleConfirm}>
           <Link to="/" className="confirm-cta btn">
             ยืนยัน
           </Link>
+          </button>
           </div>
         </div>
         </div>

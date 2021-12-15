@@ -34,6 +34,7 @@
 
 #history .container .history-card {
   margin: auto;
+  overflow: scroll;
 }
 
 #history .container .head-cta {

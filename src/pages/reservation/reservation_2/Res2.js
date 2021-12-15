@@ -29,6 +29,9 @@ const Res2 = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (input.name === "" || input.lastname === "" || input.phone === "" || input.numpassenger === "") {
+      alert("Please fill all the fields");
+      }
     console.log("submit value", input);
     set(ref(getDatabase(), 'users/' + UserId + '/data/2/'), { //push data to firebase
       name: input.name,
