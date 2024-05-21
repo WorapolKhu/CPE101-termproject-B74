@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="17.1" height="13.68" viewBox="0 0 17.1 13.68">
-  <path id="Icon_material-email" data-name="Icon material-email" d="M18.39,6H4.71a1.708,1.708,0,0,0-1.7,1.71L3,17.97a1.715,1.715,0,0,0,1.71,1.71H18.39a1.715,1.715,0,0,0,1.71-1.71V7.71A1.715,1.715,0,0,0,18.39,6Zm0,3.42L11.55,13.7,4.71,9.42V7.71l6.84,4.275L18.39,7.71Z" transform="translate(-3 -6)" fill="#135667"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="17.1" height="13.68" viewBox="0 0 17.1 13.68"><path id="Icon_material-email" fill="#135667" d="M18.39,6H4.71a1.708,1.708,0,0,0-1.7,1.71L3,17.97a1.715,1.715,0,0,0,1.71,1.71H18.39a1.715,1.715,0,0,0,1.71-1.71V7.71A1.715,1.715,0,0,0,18.39,6Zm0,3.42L11.55,13.7,4.71,9.42V7.71l6.84,4.275L18.39,7.71Z" data-name="Icon material-email" transform="translate(-3 -6)"/></svg>
